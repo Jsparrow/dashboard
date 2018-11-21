@@ -5,6 +5,9 @@ module.exports = {
     markdown: {
         toc: {
             includeLevel: [2, 3, 4]
+        },
+        externalLinks: {
+            target: '_self'
         }
     }
 };
