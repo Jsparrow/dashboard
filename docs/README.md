@@ -6,18 +6,18 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
-## <span style="color:#1784BD;">jSparrow 2.7.0</span>
+## jSparrow 2.7.0
 
 Thank you for choosing our tool for automatical code improvement!
 We greatly appreciate your suggestions and general feedback in order to further enhance jSparrow!
 
-#### <span style="color:#1784BD;">Quick Start</span>
+#### Quick Start
 
 ![Eclipse](/dashboard/img/quick-start.jpg)
 
-| [Buy License](https://jsparrow.eu/download/) |  [jSparrow Website](https://jsparrow.eu/) | [Knowledge Base](https://jsparrow.eu/knowledge-base/) | [Changelog](https://jsparrow.eu/changelog/) | [News Page](https://jsparrow.info/) | [Contact Us](https://jsparrow.eu/about-splendit/) |
+| [Buy License](https://jsparrow.eu/download/) | [jSparrow Website](https://jsparrow.eu/) | [Knowledge Base](https://jsparrow.eu/knowledge-base/) | [Changelog](https://jsparrow.eu/changelog/) | [News Page](https://jsparrow.info/) | [Contact Us](https://jsparrow.eu/about-splendit/) |
 
-## <span style="color:#1784BD;">News</span>
+## News
 
 ![jSparrow Linebreak Top](/dashboard/img/git-linebreak-top.png)
 
