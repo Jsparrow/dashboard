@@ -4,7 +4,7 @@ footer: © jSparrow a brand of Splendit IT-Consulting GmbH 2018
 title: jSparrow
 ---
 
-![jSparrow Linebreak Very-Top](https://jsparrow.eu/wp-content/uploads/2018/11/git-linebreak-very-top.png)
+![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
 ## <span style="color:#1784BD;">jSparrow 2.7.0</span>
 
@@ -13,16 +13,16 @@ We greatly appreciate your suggestions and general feedback in order to further 
 
 #### <span style="color:#1784BD;">Quick Start</span>
 
-![Eclipse](https://jsparrow.eu/wp-content/uploads/2018/11/quick-start.jpg)
+![Eclipse](/dashboard/img/quick-start.jpg)
 
 | [Buy License](https://jsparrow.eu/download/) |  [jSparrow Website](https://jsparrow.eu/) | [Knowledge Base](https://jsparrow.eu/knowledge-base/) | [Changelog](https://jsparrow.eu/changelog/) | [News Page](https://jsparrow.info/) | [Contact Us](https://jsparrow.eu/about-splendit/) |
 
 ## <span style="color:#1784BD;">News</span>
 
-![jSparrow Linebreak Top](https://jsparrow.eu/wp-content/uploads/2018/11/git-linebreak-top.png)
+![jSparrow Linebreak Top](/dashboard/img/git-linebreak-top.png)
 
 [jSparrow 2.7.0!!](https://www.jsparrow.info/home/jsparrow-2-7-0)
-This release brings 6 new rules and a news dashboard! 
+This release brings 6 new rules and a news dashboard!
 * Remove Unnecessary Thrown Exceptions on Method Signatures
 * Remove Double Negations
 * Remove Explicit Call To super()
@@ -37,7 +37,7 @@ Check the full documentation for more information in jSparrows's [changelog](htt
 ---
 
 [User statistics are finally here!](https://www.jsparrow.info/home/user-statistics-are-finally-here)
-The measurement results of the automatical Java code refactoring are impressive! Check them out [here!](https://jsparrow.github.io/github/statistics.html) 
+The measurement results of the automatical Java code refactoring are impressive! Check them out [here!](https://jsparrow.github.io/github/statistics.html)
 ...
 *Nov 19, 2018*
 
@@ -79,7 +79,7 @@ After jSparrow passed the 1500 user mark as an Eclipse plugin, the jSparrow Mids
 The jSparrow Midsummer Release 2.0 was released today:
 In addition, jSparrow is today listed on the Eclipse Marketplace:
 Thanks a lot to our dedicated team who have done a great job! Everyone is fully committed to the idea
-... 
+...
 *Jun 22, 2017*
 
-![jSparrow Linebreak Bottom](https://jsparrow.eu/wp-content/uploads/2018/11/git-linebreak-bottom.png)
+![jSparrow Linebreak Bottom](/dashboard/img/git-linebreak-bottom.png)
