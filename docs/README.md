@@ -6,6 +6,15 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow Starter is coming!!!
+
+On ***December 21st 2018***, our solstice release, jSparrow surprises you with a new jSparrow Starter Version. Look forward to apply ***15 rules free of charge*** with jSparrow Eclipse 3.0.0!
+
+After a short registration, you will get a license key, allowing you to apply 15 rules on your projects. You can then decide if you want to use the jSparrow Free version, as usual, or the new features of jSparrow Starter.
+
+***Stay tuned!***
+
+
 ## jSparrow 2.7.0
 
 Thank you for choosing our tool for automatical code improvement!
