@@ -25,7 +25,7 @@ We greatly appreciate your suggestions and general feedback in order to further 
 
 | [Buy License](https://jsparrow.eu/get-jsparrow/) | [jSparrow Website](https://jsparrow.eu/) | [Documentation](https://jsparrow.github.io/) | [Release Notes](https://jsparrow.github.io/eclipse/release-notes.html) | [Blog](https://jsparrow.info/) | [Contact Us](https://jsparrow.eu/about-splendit/) |
 
-## News
+## Blog
 
 ![jSparrow Linebreak Top](/dashboard/img/git-linebreak-top.png)
 
@@ -38,14 +38,14 @@ This release brings 6 new rules and a news dashboard!
 * Use StringBuilder::append
 * Use Guard Condition
 
-Check the full documentation for more information in jSparrows's [changelog](https://jsparrow.github.io/eclipse/release-notes.html).
+Check the full documentation for more information in jSparrow's [Release Notes](https://jsparrow.github.io/eclipse/release-notes.html).
 ...
 *Nov 21, 2018*
 
 ---
 
 [User statistics are finally here!](https://www.jsparrow.info/home/user-statistics-are-finally-here)
-The measurement results of the automatical Java code refactoring are impressive! Check them out [here!](https://jsparrow.github.io/github/statistics.html)
+The measurement results of the automatical Java code refactoring are impressive! Check them out [here](https://jsparrow.github.io/github/statistics.html)!
 ...
 *Nov 19, 2018*
 
