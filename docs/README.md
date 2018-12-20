@@ -9,7 +9,7 @@ title: jSparrow
 ## jSparrow Starter released!!!
 Promised and kept - ***jSparrow Eclipse Starter*** is ***released***!
 
-With this new version of jSparrow you will be able to ***apply 15 rules free of charge***. After a short registration, you will get a license key, allowing you to apply the rules on your projects.
+With this new version of jSparrow you will be able to [apply 15 rules free of charge](https://jsparrow.github.io/rules/#free-rules-in-jsparrow-starter). After a short registration, you will get a license key, allowing you to apply the rules on your projects.
 
 You can then decide if you want to use the *jSparrow Free* version, as usual, or the new features of ***jSparrow Starter for automatic refactoring***.
 
