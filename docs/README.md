@@ -6,6 +6,17 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow Starter released!!!
+Promised and kept - jSparrow Eclipse Starter is released!
+
+With this new version of jSparrow you will be able to ***apply 15 rules free of charge***. After a short registration, you will get a license key, allowing you to apply the rules on your projects.
+
+You can then decide if you want to use the *jSparrow Free* version, as usual, or the new features of jSparrow Starter for automatic refactoring.
+
+Have fun with the new features!
+
+Check out the [Release Notes](https://jsparrow.github.io/eclipse/release-notes.html#_3-0-0)!
+
 ## jSparrow Starter is coming!!!
 
 On ***December 21st 2018***, our solstice release, jSparrow surprises you with a new jSparrow Starter Version. Look forward to apply ***15 rules free of charge*** with jSparrow Eclipse 3.0.0!
@@ -14,7 +25,7 @@ After a short registration, you will get a license key, allowing you to apply 15
 
 ***Stay tuned!***
 
-## jSparrow 2.7.0
+## jSparrow 3.0.0
 
 Thank you for choosing our tool for automatic code improvement!
 We greatly appreciate your suggestions and general feedback in order to further enhance jSparrow!
@@ -28,6 +39,16 @@ We greatly appreciate your suggestions and general feedback in order to further 
 ## Blog
 
 ![jSparrow Linebreak Top](/dashboard/img/git-linebreak-top.png)
+
+[jSparrow 3.0.0!!](https://jsparrow.github.io/eclipse/release-notes.html#_3-0-0)
+This release brings brings new rules and improvements!
+
+Make sure to checkout how to get the free rules at [Registration for 15 free rules](https://jsparrow.github.io/eclipse/installation-guide.html#jsparrow-starter-registration).
+
+Check the full documentation for more information in jSparrow's [Release Notes](https://jsparrow.github.io/eclipse/release-notes.html).
+...
+*Dec 21, 2018*
+
 
 [jSparrow 2.7.0!!](https://jsparrow.github.io/eclipse/release-notes.html#_2-7-0)
 This release brings 6 new rules and a news dashboard!
