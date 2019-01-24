@@ -6,6 +6,15 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.1.0 announcement
+
+On Tuesday, January 29th, jSparrow 3.1.0 will come with support for [Eclipse 2018-12](https://www.eclipse.org/downloads/packages/release/2018-12) and further UI improvements.
+Enjoy refactoring with jSparrow on the latest Eclipse version. 
+
+Don't forget to register for jSparrow Starter and get [***15 rules free of charge***](https://jsparrow.github.io/rules/#free-rules-in-jsparrow-starter). 
+
+***Happy Coding!***
+
 ## jSparrow Starter released!!!
 Promised and kept - ***jSparrow Eclipse Starter*** is ***released***!
 
