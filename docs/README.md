@@ -8,11 +8,12 @@ title: jSparrow
 
 ## jSparrow 3.2.0 released!!!
 
-On thursday the 21.02.2019 jSparrows 3.2.0 release arrived. This brings a new rule and a link to our documentation space from each rule in the select rules wizard.
+On Thursday, 21 February 2019, jSparrow 3.2.0 release arrived. 
+This brings a new rule and a link to our documentation space from each rule in the select rules wizard.
 
-We are also happy to anounce that with this release jSparrow is ready for Java 11.
+We are also happy to announce that with this release jSparrow is ready for Java 11.
 
-For more information, check out our [Release Notes](https://jsparrow.github.io/eclipse/release-notes.html#_3-1-0).
+For more information, check out our [Release Notes](https://jsparrow.github.io/eclipse/release-notes.html#_3-2-0).
 
 ## jSparrow 3.1.0 released!!!
 
