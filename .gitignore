@@ -72,6 +72,8 @@ docs/.vuepress/dist
 # Serverless directories
 .serverless
 
-#json lock
-
+# json lock
 package-lock.json
+
+# yarn.lock
+yarn.lock
