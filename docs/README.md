@@ -6,9 +6,19 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## New rules are coming in jSparrow 3.3.0!!!
+
+We are happy to announce that we plan to release new rules with jSparrow 3.3.0!
+
+On Thursday, March 21, 2019, two new rules and one improved rule will be released.
+Out of those three rules, two will have the [Lambda](https://jsparrow.github.io/tags.html#Lambda) and [Loop](https://jsparrow.github.io/tags.html#Loop) tags.
+The third rule will have the [Readability](https://jsparrow.github.io/tags.html#Readability) tag.
+
+***Stay tuned for more information!***
+
 ## jSparrow 3.2.0 released!!!
 
-On Thursday, February 21, 2019, jSparrow 3.2.0 release arrived. 
+On Thursday, February 21, 2019, jSparrow 3.2.0 release arrived.
 This brings a new rule and a link to our documentation space from each rule in the select rules wizard.
 
 We are also happy to announce that with this release jSparrow is ready for Java 11.
@@ -21,9 +31,9 @@ jSparrow 3.1.0 has been thoroughly tested and is now ready for [Eclipse 2018-12]
 Some additional UI improvements and bug fixes are also included in jSparrow 3.1.0.
 For more information, check out our [Release Notes](https://jsparrow.github.io/eclipse/release-notes.html#_3-1-0).
 
-Let jSparrow identify and automatically fix code smells for you. 
+Let jSparrow identify and automatically fix code smells for you.
 Register for free to get jSparrow Starter and apply [15 rules](https://jsparrow.github.io/rules/#free-rules-in-jsparrow-starter).
-Or go with the full power [jSparrow Pro](https://jsparrow.eu/get-jsparrow/) to perform ***automatic refactoring*** on your code base with [***53 rules***](https://jsparrow.github.io/rules/). 
+Or go with the full power [jSparrow Pro](https://jsparrow.eu/get-jsparrow/) to perform ***automatic refactoring*** on your code base with [***53 rules***](https://jsparrow.github.io/rules/).
 
 Thank you for supporting jSparrow!
 
@@ -32,9 +42,9 @@ Thank you for supporting jSparrow!
 ## jSparrow 3.1.0 announcement
 
 On Tuesday, January 29th, jSparrow 3.1.0 will come with support for [Eclipse 2018-12](https://www.eclipse.org/downloads/packages/release/2018-12) and further UI improvements.
-Enjoy refactoring with jSparrow on the latest Eclipse version. 
+Enjoy refactoring with jSparrow on the latest Eclipse version.
 
-Don't forget to register for jSparrow Starter and get [***15 rules free of charge***](https://jsparrow.github.io/rules/#free-rules-in-jsparrow-starter). 
+Don't forget to register for jSparrow Starter and get [***15 rules free of charge***](https://jsparrow.github.io/rules/#free-rules-in-jsparrow-starter).
 
 ***Happy Coding!***
 
