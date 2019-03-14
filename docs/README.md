@@ -14,7 +14,7 @@ On Thursday, March 21, 2019, two new rules and one improved rule will be release
 Out of those three rules, two will have the [Lambda](https://jsparrow.github.io/tags.html#Lambda) and [Loop](https://jsparrow.github.io/tags.html#Loop) tags.
 The third rule will have the [Readability](https://jsparrow.github.io/tags.html#Readability) tag.
 
-Stay tuned for more information!
+***Stay tuned for more information!***
 
 ## jSparrow 3.2.0 released!!!
 
