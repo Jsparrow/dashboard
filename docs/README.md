@@ -6,6 +6,20 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.3.0 released!!!
+
+jSparrow 3.3.0 is ready with new rules and supports Eclipse 2019-03! This brings jSparrow to a total number of [***56 automatic refactoring rules!***](https://jsparrow.github.io/rules/)
+
+**Check out the new rule set extensions:**
+* [Replace For-Loop with Stream::Match](https://jsparrow.github.io/rules/enhanced-for-loop-to-stream-any-match.html)
+* [Use BufferedReader::lines](https://jsparrow.github.io/rules/buffered-reader-lines.html)
+* [Remove Modifiers in Interface Properties](https://jsparrow.github.io/rules/remove-modifiers-in-interface-properties.html)
+
+Additionally, there are improvements to Java version handling and minor UI improvements.
+Have a look at the complete [Release Notes](https://jsparrow.github.io/eclipse/release-notes.html#_3-3-0)!
+
+***Have fun saving time with jSparrow!***
+
 ## New rules are coming in jSparrow 3.3.0!!!
 
 We are happy to announce that we plan to release new rules with jSparrow 3.3.0!
