@@ -8,7 +8,7 @@ title: jSparrow
 
 ## jSparrow 3.3.0 released!!!
 
-jSparrow 3.3.0 is ready with new rules! This brings jSparrow to a total number of [***56 automatic refactoring rules!***](https://jsparrow.github.io/rules/)
+jSparrow 3.3.0 is ready with new rules and supports Eclipse 2019-03! This brings jSparrow to a total number of [***56 automatic refactoring rules!***](https://jsparrow.github.io/rules/)
 
 **Check out the new rule set extensions:**
 * [Replace For-Loop with Stream::Match](https://jsparrow.github.io/rules/enhanced-for-loop-to-stream-any-match.html)
