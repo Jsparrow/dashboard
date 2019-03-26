@@ -10,9 +10,9 @@ title: jSparrow
 
 On Thursday, March 28th, jSparrow Maven Plugin 2.0.0 will be released.
 This version is compatible with both Java 8 and Java 11. 
-Additionally, jSparrow Maven Plugin 2.0.0 includes internal stability improvements and naturally the new features of the latest jSparrow Eclipse Plugin 3.3.0. 
+Additionally, the jSparrow Maven Plugin 2.0.0 includes internal stability improvements and naturally the new features of the latest jSparrow Eclipse Plugin 3.3.0. 
 
-***Stay IDE independent with jSparrow Maven Plugin!***
+***Stay IDE independent with the jSparrow Maven Plugin!***
 
 ## jSparrow 3.3.0 released!!!
 
