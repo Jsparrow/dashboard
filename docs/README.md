@@ -6,11 +6,20 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
-## jSparrow Maven Plugin 2.0.0 announcement 
+## jSparrow Maven Plugin 2.0.0 released!
+
+We are happy to announce the release of version 2.0.0 of the jSparrow Maven plugin!
+
+This release brings lots of new rules, performance improvements, Java 11 support, and much more!
+Check out the [Release Notes](https://jsparrow.github.io/maven/release-notes.html#_2-0-0) for more information!
+
+***Improve code in your build pipeline with the jSparrow Maven plugin!***
+
+## jSparrow Maven Plugin 2.0.0 announcement!
 
 On Thursday, March 28th, jSparrow Maven Plugin 2.0.0 will be released.
-This version is compatible with both Java 8 and Java 11. 
-Additionally, the jSparrow Maven Plugin 2.0.0 includes internal stability improvements and naturally the new features of the latest jSparrow Eclipse Plugin 3.3.0. 
+This version is compatible with both Java 8 and Java 11.
+Additionally, the jSparrow Maven Plugin 2.0.0 includes internal stability improvements and naturally the new features of the latest jSparrow Eclipse Plugin 3.3.0.
 
 ***Stay IDE independent with the jSparrow Maven Plugin!***
 
