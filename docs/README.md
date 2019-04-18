@@ -6,6 +6,16 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.4.0 and jSparrow Maven Plugin 2.1.0 released!
+
+Winter's days are past and it is time to start spring cleaning!
+
+The [Remove Unused Parameters in Private Methods](https://jsparrow.github.io/rules/remove-unused-parameter.html) rule automatically removes unused parameters of private methods. This rule has been inspired by SonarQube's [Unused method parameters should be removed](https://sonarcloud.io/organizations/default/rules?languages=java&open=squid%3AS1172&q=squid%3AS1172) major code smell.
+
+Find more information in our [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-4-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-1-0) Release Notes!
+
+***"Make Simple Tasks Simple!" — Bjarne Stroustrup***
+
 ## jSparrow Maven Plugin 2.0.0 released!
 
 We are happy to announce the release of version 2.0.0 of the jSparrow Maven plugin!
