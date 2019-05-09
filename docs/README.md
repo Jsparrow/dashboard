@@ -6,6 +6,15 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## New rule in jSparrow 3.5.0 and jSparrow Maven Plugin 2.2.0!!!
+
+We are happy to announce that jSparrow will soon be enriched with a new rule!
+
+jSparrow 3.5.0 and jSparrow Maven Plugin 2.2.0 are thoroughly tested and will be released on Thursday, May 16, 2019. 
+This release contains a new rule with the [Old Language Constructs](https://jsparrow.github.io/tags.html#Old_Language_Constructs) tag.
+
+***Stay tuned for more information!***
+
 ## jSparrow 3.4.0 and jSparrow Maven Plugin 2.1.0 released!
 
 Winter's days are past and it is time to start spring cleaning!
