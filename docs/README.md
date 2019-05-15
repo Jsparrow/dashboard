@@ -6,6 +6,15 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.5.0 and jSparrow Maven Plugin 2.2.0 released!
+
+A new rule has arrived! Now jSparrow offers you [***58 automatic refactoring rules!***](https://jsparrow.github.io/rules/)
+
+Have a look at our documentation space to check out the new rule: [Replace Map::get by Map::getOrDefault](https://jsparrow.github.io/rules/map-get-or-default.html)
+
+***“Give a man a program, frustrate him for a day.<br />Teach a man to program, frustrate him for a lifetime.”<br />― Muhammad Waseem***
+
+
 ## New rule in jSparrow 3.5.0 and jSparrow Maven Plugin 2.2.0!!!
 
 We are happy to announce that jSparrow will soon be enriched with a new rule!
