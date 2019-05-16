@@ -6,6 +6,18 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.5.0 and jSparrow Maven Plugin 2.2.0 released!
+
+*The sparrows round their new nests chirp with glee as jSparrow is hatching a rule in the syntax tree!*
+
+The new [Replace Map::get by Map::getOrDefault](https://jsparrow.github.io/rules/map-get-or-default.html) rule automatically replaces invocations of [```Map::get```](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#get-java.lang.Object-) with the alternative [```Map::getOrDefault```](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#getOrDefault-java.lang.Object-V-), thus eliminating the succeeding **null** checks.
+
+This new rule brings jSparrow to a total of [***58 automatic refactoring rules!***](https://jsparrow.github.io/rules/)
+
+Find more information in our [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-5-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-2-0) Release Notes!
+
+***“Controlling complexity is the essence of computer programming.” — Brian Kernigan***
+
 ## New rule in jSparrow 3.5.0 and jSparrow Maven Plugin 2.2.0!!!
 
 We are happy to announce that jSparrow will soon be enriched with a new rule!
