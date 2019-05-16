@@ -8,11 +8,13 @@ title: jSparrow
 
 ## jSparrow 3.5.0 and jSparrow Maven Plugin 2.2.0 released!
 
-A new rule has arrived! Now jSparrow offers you [***58 automatic refactoring rules!***](https://jsparrow.github.io/rules/)
+*The sparrows round their new nests chirp with glee as jSparrow is hatching a rule in the syntax tree!*
 
-Have a look at our documentation space to check out the new rule: [Replace Map::get by Map::getOrDefault](https://jsparrow.github.io/rules/map-get-or-default.html)
+A new rule brings jSparrow to a total of [***58 automatic refactoring rules!***](https://jsparrow.github.io/rules/)
 
-***“Give a man a program, frustrate him for a day.<br />Teach a man to program, frustrate him for a lifetime.”<br />― Muhammad Waseem***
+Check out our documentation space for the new rule: [Replace Map::get by Map::getOrDefault](https://jsparrow.github.io/rules/map-get-or-default.html)
+
+***“Controlling complexity is the essence of computer programming.” — Brian Kernigan***
 
 
 ## New rule in jSparrow 3.5.0 and jSparrow Maven Plugin 2.2.0!!!
