@@ -6,6 +6,12 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.5.1 released!
+
+We have introduced a [Customer Portal](https://jsparrow.atlassian.net/servicedesk/customer/portal/1), where you can report bugs and get support. There is also a new email address for customer support: [support@jsparrow.eu](mailto:support@jsparrow.eu) 
+
+This release adds the link to our Customer Portal and the new email address to the help dialogs in jSparrow.
+
 ## jSparrow 3.5.0 and jSparrow Maven Plugin 2.2.0 released!
 
 *The sparrows round their new nests chirp with glee as jSparrow is hatching a rule in the syntax tree!*
