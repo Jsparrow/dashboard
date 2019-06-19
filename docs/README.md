@@ -6,6 +6,26 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+### jSparrow 3.6.0 and jSparrow Maven Plugin 2.3.0 released!
+
+*The earth is warm, the sun's ablaze, it is a time of bug-free days!*
+
+jSparrow is not resting and brings three new rules with this latest release!
+
+**Checkout the new rules:** 
+* [**Use Factory Methods for Collections**](https://jsparrow.github.io/rules/collections-factory-methods.html): 
+Replaces ```Collections.unmodifiable{List|Set|Map}``` with  convenient factory methods introduced in Java 9 for creating immutable collections [```List.of```](https://docs.oracle.com/javase/9/docs/api/java/util/List.html#of-E...-), [```Set.of```](https://docs.oracle.com/javase/9/docs/api/java/util/Set.html#of-E...-) and [```Map.ofEntries```](https://docs.oracle.com/javase/9/docs/api/java/util/Map.html#ofEntries-java.util.Map.Entry...-). 
+* [**Reorder Modifiers**](https://jsparrow.github.io/rules/reorder-modifiers.html): 
+Reorders the modifiers on class declarations, field declarations and method declarations according to the Java conventions.
+* [**Use List Sort**](https://jsparrow.github.io/rules/use-list-sort.html): 
+Replaces static invocations of `Collections.sort(List, Comparator)` with `List.sort(Comparator)` introduced in Java 8.
+
+Now jSparrow offers a total number of [***61 automatic refactoring rules!***](https://jsparrow.github.io/rules/)!
+
+Check out our release notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-6-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-3-0)!
+
+***“Any tool should be useful in the expected way, but a truly great tool lends itself to uses you never expected.“ — Eric S. Raymond***
+
 ## New Rules in jSparrow 3.6.0 and jSparrow Maven Plugin 2.3.0
 
 We are happy to announce that the next jSparrow release will have ***three*** additional refactoring rules. 
