@@ -6,7 +6,7 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
-### jSparrow 3.6.0 and jSparrow Maven Plugin 2.3.0 released!
+## jSparrow 3.6.0 and jSparrow Maven Plugin 2.3.0 released!
 
 *The earth is warm, the sun's ablaze, it is a time of bug-free days!*
 
