@@ -6,6 +6,15 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## New Rule in jSparrow 3.7.0 and jSparrow Maven Plugin 2.4.0
+
+We are looking forward to the next jSparrow release which will include an additional refactoring rule and some bug fixes. 
+
+jSparrow 3.7.0 and jSparrow Maven Plugin 2.4.0 have been tested extensively and are ready to be released on Thursday, July 18, 2019. 
+The new rule will have [Java 9](https://jsparrow.github.io/tags.html#Java_9), [Loop](https://jsparrow.github.io/tags.html#Loop) and [Lambda](https://jsparrow.github.io/tags.html#Lambda) tags.
+
+***Stay tuned!***
+
 ## jSparrow 3.6.0 and jSparrow Maven Plugin 2.3.0 released!
 
 *The earth is warm, the sun's ablaze, it is a time of bug-free days!*
