@@ -6,6 +6,20 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.7.0 and jSparrow Maven Plugin 2.4.0 released and are Lombok ready!
+
+*"I hope you love sparrows too. It is economical. It saves going to heaven."*
+
+This release makes jSparrow compatible with [**Lombok**](https://projectlombok.org/) and introduces a new refactoring rule. 
+
+The new rule [Replace For-Loop with `Stream::takeWhile`](https://jsparrow.github.io/rules/enhanced-for-loop-to-stream-take-while-rule.html) automatically replaces the enhanced for-loops iterating over the first elements of a collection with [`Stream::takeWhile`](https://docs.oracle.com/javase/9/docs/api/java/util/stream/Stream.html#takeWhile-java.util.function.Predicate-), thus extending the scope of functional programming offered by Java. 
+
+This new rule brings jSparrow to a total of [***62 automatic refactoring rules!***](https://jsparrow.github.io/rules/)
+
+Find more information in our [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-7-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-4-0) Release Notes!
+
+***"Object oriented programming makes code understandable by encapsulating moving parts. Functional programming makes code understandable by minimizing moving parts." - Michael Feathers***
+
 ## New Rule in jSparrow 3.7.0 and jSparrow Maven Plugin 2.4.0
 
 We are looking forward to the next jSparrow release which will include an additional refactoring rule and some bug fixes. 
