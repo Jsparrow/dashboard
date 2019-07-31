@@ -75,5 +75,3 @@ docs/.vuepress/dist
 # json lock
 package-lock.json
 
-# yarn.lock
-yarn.lock

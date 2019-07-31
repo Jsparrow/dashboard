@@ -1,0 +1,27 @@
+language: node_js
+node_js:
+  - "10"
+
+install:
+  - yarn install
+  - yarn run build
+
+script:
+  - echo "Skipping tests"
+
+cache:
+  directories:
+  - "node_modules"
+
+notifications:
+  email: false
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: false
+  local_dir: docs/.vuepress/dist
+  target-branch: gh-pages
+  on:
+    branch: master

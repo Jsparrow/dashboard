@@ -10,9 +10,12 @@
   "author": "Martin Huter <martin.huter@splendit.at>",
   "license": "MIT",
   "dependencies": {
-    "vuepress": "^0.14.10"
+    "vuepress": "^1.0.3"
   },
   "resolutions": {
-    "webpack-dev-middleware": "3.6.0"
+    "webpack-dev-middleware": "3.7.0"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-google-analytics": "^1.0.0-rc.1"
   }
 }
