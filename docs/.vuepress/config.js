@@ -9,10 +9,10 @@ module.exports = {
             href: '/logo.png'
         }]
     ],
-    markdown: {
+    extendMarkdown(md) {
         toc: {
             includeLevel: [2, 3, 4]
-        },
+        }
         externalLinks: {
             target: '_self'
         }
