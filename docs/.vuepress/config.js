@@ -9,6 +9,12 @@ module.exports = {
             href: '/logo.png'
         }]
     ],
+    plugins: [ 
+        '@vuepress/google-analytics', 
+        { 
+            'ga': 'UA-144352955-2' 
+        } 
+    ], 
     extendMarkdown(md) {
         toc: {
             includeLevel: [2, 3, 4]
