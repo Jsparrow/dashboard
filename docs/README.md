@@ -276,3 +276,5 @@ Thanks a lot to our dedicated team who have done a great job! Everyone is fully 
 *Jun 22, 2017*
 
 ![jSparrow Linebreak Bottom](/dashboard/img/git-linebreak-bottom.png)
+
+<Footer />
