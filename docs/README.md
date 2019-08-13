@@ -17,7 +17,7 @@ jSparrow has been busy studying new rules and is therefore happy to announce tha
 
 ### New rules to improve performance and readability!
 
-* [Use Collections Singleton List](/rules/use-collections-singleton-list.html) offers an efficient way to to create empty or single-element lists. 
+* [Use Collections Singleton List](/rules/use-collections-singleton-list.html) offers an efficient way to create empty or single-element lists. 
 * [Remove Null Checks Before Instanceof](/rules/remove-null-check-before-instanceof.html) recognizes redundant null checks before `instanceof` and removes them. 
 
 Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-8-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-5-0)!
