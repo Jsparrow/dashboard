@@ -10,7 +10,8 @@
   "author": "Martin Huter <martin.huter@splendit.at>",
   "license": "MIT",
   "dependencies": {
-    "vuepress": "^1.0.3"
+    "vuepress": "^1.0.3",
+    "vuepress-plugin-mathjax": "^1.2.8"
   },
   "resolutions": {
     "webpack-dev-middleware": "3.7.0"

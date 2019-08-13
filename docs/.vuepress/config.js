@@ -15,7 +15,8 @@ module.exports = {
             {
                 'ga': 'UA-144352955-2'
             }
-        ]
+        ],
+        'mathjax'
     ],
     extendMarkdown(md) {
         toc: {
