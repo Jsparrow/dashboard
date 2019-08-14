@@ -6,6 +6,25 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## Two new rules in jSparrow 3.8.0 and jSparrow Maven Plugin 2.5.0!
+
+*A little bird, with plumage brown,  
+On top my codebase flutters down,  
+In search for issues where they may lay,  
+Till, full on bugs, it flies away.*
+
+jSparrow has been busy studying new rules and is therefore happy to announce that he already knows $2^6$ rules! That's right, jSparrow supports [***64 automatic refactoring rules!***](https://jsparrow.github.io/rules/)
+
+### New rules to improve performance and readability!
+
+* [Use Collections Singleton List](https://jsparrow.github.io/rules/use-collections-singleton-list.html) offers an efficient way to create empty or single-element lists. 
+* [Remove Null-Checks Before Instanceof](https://jsparrow.github.io/rules/remove-null-check-before-instanceof.html) recognizes redundant null-checks before `instanceof` and removes them. 
+
+Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-8-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-5-0)!
+
+***"The most important property of a program is whether it accomplishes the intention of its user.” ― C.A.R. Hoare***
+
+
 ## jSparrow 3.7.0 and jSparrow Maven Plugin 2.4.0 released and are Lombok ready!
 
 *"I hope you love sparrows too. It is economical. It saves going to heaven."*
@@ -18,7 +37,7 @@ This new rule brings jSparrow to a total of [***62 automatic refactoring rules!*
 
 Find more information in our [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-7-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-4-0) Release Notes!
 
-***"Object oriented programming makes code understandable by encapsulating moving parts. Functional programming makes code understandable by minimizing moving parts." - Michael Feathers***
+***"Object oriented programming makes code understandable by encapsulating moving parts. Functional programming makes code understandable by minimizing moving parts." ― Michael Feathers***
 
 ## New Rule in jSparrow 3.7.0 and jSparrow Maven Plugin 2.4.0
 
@@ -70,7 +89,7 @@ This release adds the link to our Customer Portal and the new email address to t
 
 *The sparrows round their new nests chirp with glee as jSparrow is hatching a rule in the syntax tree!*
 
-The new [Replace Map::get by Map::getOrDefault](https://jsparrow.github.io/rules/map-get-or-default.html) rule automatically replaces invocations of [```Map::get```](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#get-java.lang.Object-) with the alternative [```Map::getOrDefault```](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#getOrDefault-java.lang.Object-V-), thus eliminating the succeeding **null** checks.
+The new [Replace Map::get by Map::getOrDefault](https://jsparrow.github.io/rules/map-get-or-default.html) rule automatically replaces invocations of [```Map::get```](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#get-java.lang.Object-) with the alternative [```Map::getOrDefault```](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#getOrDefault-java.lang.Object-V-), thus eliminating the succeeding null-checks.
 
 This new rule brings jSparrow to a total of [***58 automatic refactoring rules!***](https://jsparrow.github.io/rules/)
 
