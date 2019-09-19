@@ -6,6 +6,21 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.9.0 and jSparrow Maven Plugin 2.6.0 released!
+
+*His eyes with elf-like air did peer,  
+And cheekily, he flew down near;  
+Rightfully so, he posed with pride,  
+Since he removed code smells, code-base wide!*
+
+jSparrow introduces a new automatic refactoring rule that has the potential to greatly improve loop performance! Now there are [***65 automatic refactoring rules***](https://jsparrow.github.io/rules/) ready to be applied!
+
+### A new rule to improve performance!
+
+* [Insert Break Statements in For-loops](https://jsparrow.github.io/rules/insert-break-statement-in-loops.html) finds instances where Enhanced For-loops would benefit from an early stopping mechanism and adds `break` statements to avoid redundant loop cycles.  
+
+***“Truth can only be found in one place: the code.” ― Robert C. Martin***
+
 ## Two new rules in jSparrow 3.8.0 and jSparrow Maven Plugin 2.5.0!
 
 *A little bird, with plumage brown,  
