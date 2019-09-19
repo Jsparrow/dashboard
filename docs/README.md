@@ -13,7 +13,7 @@ And cheekily, he flew down near;
 Rightfully so, he posed with pride,  
 Since he removed code smells, code-base wide!*
 
-jSparrow introduces a new automatic refactoring rule that has the potential to greatly improve loop performance! Now there are [***65 automatic refactoring rules!***](https://jsparrow.github.io/rules/) ready to be applied!
+jSparrow introduces a new automatic refactoring rule that has the potential to greatly improve loop performance! Now there are [***65 automatic refactoring rules***](https://jsparrow.github.io/rules/) ready to be applied!
 
 ### A new rule to improve performance!
 
