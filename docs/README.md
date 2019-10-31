@@ -6,6 +6,23 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## New rule in jSparrow 3.10.0 and jSparrow Maven Plugin 2.7.0
+
+*Against the black void, looms the lunar sphere.  
+Hungry bugs haunt, satisfied by fright.  
+Oh my! The programmer's faces blanch in fear.  
+And thus jSparrow will eat all night.* 
+
+jSparrow brings a new rule to simplify the use of [`Optional`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html) in Java 9 and above.
+
+* [Use Optional::ifPresentOrElse](https://jsparrow.github.io/rules/optional-if-present-or-else.html) replaces if-then-else statements cheking for [`Optional#isPresent`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isPresent()) with a single call to [`Optional#ifPresentOrElse`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#ifPresentOrElse(java.util.function.Consumer,java.lang.Runnable)). 
+
+[***66 automatic refactoring rules***](https://jsparrow.github.io/rules/) are now supported by jSparrow.
+
+Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-10-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-7-0)!
+
+***"Real Programmers always confuse Christmas and Halloween because Oct31 == Dec25." ― Andrew Rutherford***
+
 ## jSparrow 3.9.0 and jSparrow Maven Plugin 2.6.0 released!
 
 *His eyes with elf-like air did peer,  
