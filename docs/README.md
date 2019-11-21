@@ -6,6 +6,24 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.11.0 and jSparrow Maven Plugin 2.8.0 released
+
+*Glad to see you, little bird;  
+'Twas your little chirp I heard:  
+What did you intend to say?  
+"I have a new rule for your today!"*  
+
+jSparrow 3.11.0 brings a new rule for enforcing coding conventions. 
+
+* [Hide Default Constructor In Utility Classes](/rules/hide-default-constructor-in-utility-classes.html):
+Utility classes are classes containing `static` methods and fields only. Such classes should not be instantiated. The default constructor will be hidden by adding a private constructor to utility classes, which prevents their instantiation.
+
+jSparrow supports [***67 automatic refactoring rules***](https://jsparrow.github.io/rules/) now.
+
+Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-11-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-8-0)!
+
+***"Walking on water and developing software from a specification are easy if both are frozen."  – Edward V Berard***
+
 ## New rule in jSparrow 3.10.0 and jSparrow Maven Plugin 2.7.0
 
 *Against the black void, looms the lunar sphere.  
