@@ -1,13 +1,13 @@
 language: node_js
 node_js:
-  - "10"
+  - "lts/*"
 
 install:
   - yarn install
   - yarn run build
 
 script:
-  - echo "Skipping tests"
+  - true
 
 cache:
   directories:
