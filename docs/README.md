@@ -6,6 +6,22 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.12.0 and jSparrow Maven Plugin 2.9.0 released
+
+*I heard a bird sing  
+In the dark of December.  
+A magical thing  
+And sweet to remember.*
+
+jSparrow 3.12.0 adds a new refactoring rule for improving source code readability. This brings jSparrow to a total of [***68 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+* [Make Fields And Variables Final](https://jsparrow.github.io/rules/make-fields-and-variables-final.html):
+This rule declares `private` fields and local variables `final`, if they are effectively `final`. Readability and maintainability of code is improved and accidental reassignments are prevented for affected fields and variables.
+
+Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-12-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-9-0)!
+
+***"Assignment statements are abstractions of destructive modifications of memory cells" ― Programming Language Concepts. Carlo Ghezzi, Mehdi Jazayeri***
+
 ## jSparrow 3.11.0 and jSparrow Maven Plugin 2.8.0 released
 
 *Glad to see you, little bird;  
@@ -15,14 +31,14 @@ What did you intend to say?
 
 jSparrow 3.11.0 brings a new rule for enforcing coding conventions. 
 
-* [Hide Default Constructor In Utility Classes](/rules/hide-default-constructor-in-utility-classes.html):
+* [Hide Default Constructor In Utility Classes](https://jsparrow.github.io/rules/hide-default-constructor-in-utility-classes.html):
 Utility classes are classes containing `static` methods and fields only. Such classes should not be instantiated. The default constructor will be hidden by adding a private constructor to utility classes, which prevents their instantiation.
 
 jSparrow supports [***67 automatic refactoring rules***](https://jsparrow.github.io/rules/) now.
 
 Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-11-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-8-0)!
 
-***"Walking on water and developing software from a specification are easy if both are frozen."  – Edward V Berard***
+***"Walking on water and developing software from a specification are easy if both are frozen." ― Edward V Berard***
 
 ## New rule in jSparrow 3.10.0 and jSparrow Maven Plugin 2.7.0
 
@@ -33,7 +49,7 @@ And thus jSparrow will eat all night.*
 
 jSparrow brings a new rule to simplify the use of [`Optional`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html) in Java 9 and above.
 
-* [Use Optional::ifPresentOrElse](https://jsparrow.github.io/rules/optional-if-present-or-else.html) replaces if-then-else statements cheking for [`Optional#isPresent`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isPresent()) with a single call to [`Optional#ifPresentOrElse`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#ifPresentOrElse(java.util.function.Consumer,java.lang.Runnable)). 
+* [Use Optional::ifPresentOrElse](https://jsparrow.github.io/rules/optional-if-present-or-else.html) replaces if-then-else statements checking for [`Optional#isPresent`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isPresent()) with a single call to [`Optional#ifPresentOrElse`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#ifPresentOrElse(java.util.function.Consumer,java.lang.Runnable)). 
 
 [***66 automatic refactoring rules***](https://jsparrow.github.io/rules/) are now supported by jSparrow.
 
