@@ -11,7 +11,7 @@ title: jSparrow
 *Little darling of the snow,  
 Careless how the winds may blow,  
 Happy as a bird can be,  
-[Try jSparrow today, for free.](https://jsparrow.github.io/eclipse/jsparrow-starter-registration.html)*  
+[Try jSparrow now, for free.](https://jsparrow.github.io/eclipse/jsparrow-starter-registration.html)*  
 
 jSparrow 3.13.0 contains a new refactoring rule for `java.util.Optional`
 
