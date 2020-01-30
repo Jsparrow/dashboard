@@ -6,6 +6,23 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.13.0 and jSparrow Maven Plugin 2.10.0 released
+
+*Little darling of the snow,  
+Careless how the winds may blow,  
+Happy as a bird can be,  
+[Try jSparrow today, for free.](https://jsparrow.github.io/eclipse/jsparrow-starter-registration.html)*  
+
+jSparrow 3.13.0 contains a new refactoring rule for `java.util.Optional`
+
+* [Use Optional::map](/rules/optional-map.html): This rule extracts an `Optional::map` from the consumer used in `Optional::ifPresent`. This makes complicated code blocks easier to read and reuse.
+
+jSparrow supports [***69 automatic refactoring rules***](https://jsparrow.github.io/rules/) now.
+
+Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-13-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-10-0)!
+
+***"Without requirements or design, programming is the art of adding bugs to an empty text file." ― Louis Srygley***
+
 ## jSparrow 3.12.0 and jSparrow Maven Plugin 2.9.0 released
 
 *I heard a bird sing  
