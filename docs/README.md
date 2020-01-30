@@ -11,11 +11,11 @@ title: jSparrow
 *Little darling of the snow,  
 Careless how the winds may blow,  
 Happy as a bird can be,  
-[Try jSparrow now, for free.](https://jsparrow.github.io/eclipse/jsparrow-starter-registration.html)*  
+[Try jSparrow now, for free.](https://jsparrow.github.io/eclipse/starter-registration.html)*  
 
 jSparrow 3.13.0 contains a new refactoring rule for `java.util.Optional`
 
-* [Use Optional::map](/rules/optional-map.html): This rule extracts an `Optional::map` from the consumer used in `Optional::ifPresent`. This makes complicated code blocks easier to read and reuse.
+* [Use Optional::map](https://jsparrow.github.io/rules/optional-map.html): This rule extracts an `Optional::map` from the consumer used in `Optional::ifPresent`. This makes complicated code blocks easier to read and reuse.
 
 jSparrow supports [***69 automatic refactoring rules***](https://jsparrow.github.io/rules/) now.
 
