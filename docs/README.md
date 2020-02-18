@@ -6,6 +6,23 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.14.0 and jSparrow Maven Plugin 2.11.0 released
+
+*With a break in the weather the sun shines through  
+The grass spangles with the morning dew  
+As everything thaws our sparrow starts to sing  
+Getting rid of bugs just reminds us its spring.*
+
+jSparrow 3.14.0 comes with a new refactoring rule for improving `java.util.Optional`.
+
+* [Use Optional::filter](https://jsparrow.github.io/rules/optional-filter.html): This rule extracts an `Optional::filter` from the consumer used in `Optional::ifPresent`. This simplifies the lambda expression used with Optional operations.
+
+jSparrow supports [***70 automatic refactoring rules***](https://jsparrow.github.io/rules/) now.
+
+Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-14-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-11-0)!
+
+***"Any fool can write code that a computer can understand. Good programmers write code that humans can understand." ― Martin Fowler***
+
 ## jSparrow 3.13.0 and jSparrow Maven Plugin 2.10.0 released
 
 *Little darling of the snow,  
@@ -13,7 +30,7 @@ Careless how the winds may blow,
 Happy as a bird can be,  
 [Try jSparrow now, for free.](https://jsparrow.github.io/eclipse/starter-registration.html)*  
 
-jSparrow 3.13.0 contains a new refactoring rule for `java.util.Optional`
+jSparrow 3.13.0 contains a new refactoring rule for `java.util.Optional`.
 
 * [Use Optional::map](https://jsparrow.github.io/rules/optional-map.html): This rule extracts an `Optional::map` from the consumer used in `Optional::ifPresent`. This makes complicated code blocks easier to read and reuse.
 
