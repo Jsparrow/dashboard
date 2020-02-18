@@ -11,7 +11,7 @@ title: jSparrow
 *With a break in the weather the sun shines through  
 The grass spangles with the morning dew  
 As everything thaws our sparrow starts to sing  
-Getting rid of bugs just reminds us its spring.*
+Getting rid of bugs just reminds us it's spring.*
 
 jSparrow 3.14.0 comes with a new refactoring rule for improving `java.util.Optional`.
 
