@@ -29,7 +29,7 @@ to the constructor which is used for initializing a collection.
 one project simultaneously either by selecting multiple projects in 
 the project explorer or by selecting a parent project consisting of multiple child projects.
 * **Sorting the results in Summary Page.** The results in jSparrow Summary Page can now be sorted by the number of 
-findings, the remediation costs or by the name of the refactored files.  
+findings, the remediation costs or by the rule names.  
 
 Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-15-0) 
 and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-12-0)!
