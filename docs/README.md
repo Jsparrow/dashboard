@@ -6,11 +6,11 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
-## jSparrow 3.15.0 and jSparrow Man Plugin 2.12.0 released
+## jSparrow 3.15.0 and jSparrow Maven Plugin 2.12.0 released
 
-*Glad to see you, little bird;
- 'Twas your little chirp I heard:
- What did you intend to say?
+*Glad to see you, little bird;  
+ 'Twas your little chirp I heard:  
+ What did you intend to say?  
  "Let me jSparrow your code today"?*
 
 jSparrow 3.15.0 introduces a rich extension of the rules set and also brings some important UI improvements.
@@ -23,8 +23,8 @@ with [String.join](https://docs.oracle.com/javase/8/docs/api/java/lang/String.ht
 in cases where a collection of Strings is converted into a stream for the sole purpose of concatenating its values.
 * [Remove Redundant Type Casts](https://jsparrow.github.io/rules/remove-redundant-type-cast.html): Finds and removes 
 casting expressions whose target types matches exactly the type of the original expression.  
-* [Remove Collection.addAll](https://jsparrow.github.io/rules/remove-collection-add-all.html): Moves the parameters 
-used in [Collection.addAll](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#addAll-java.util.Collection-) 
+* [Remove Collection::addAll](https://jsparrow.github.io/rules/remove-collection-add-all.html): Moves the parameters 
+used in [Collection::addAll](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#addAll-java.util.Collection-) 
 to the constructor which is used for initializing the collection. 
     
 
