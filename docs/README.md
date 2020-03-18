@@ -36,7 +36,7 @@ findings, the remediation costs or by the rule names.
 Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-15-0) 
 and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-12-0)!
 
-***"Quote comes here!" - Author***
+***"Programs must be written for people to read, and only incidentally for machines to execute." ― Harold Abelson***
 
 ## jSparrow 3.14.0 and jSparrow Maven Plugin 2.11.0 released
 
