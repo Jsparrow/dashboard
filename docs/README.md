@@ -14,11 +14,13 @@ jSparrow 3.15.0 introduces a rich extension of the rules set and also brings som
 
 ### New Rules to improve performance and readability
 
-* [Use String Join](https://jsparrow.github.io/rules/use-string-join.html) replaces stream Collectors that are used for 
-concatenating values of a collection with StringJoiner.
-* [Remove Redundant Type Casts](https://jsparrow.github.io/rules/remove-redundant-type-cast.html) finds and removes 
+* [Use String Join](https://jsparrow.github.io/rules/use-string-join.html): Replaces 
+[stream().collect(Collectors.joining())](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#collect-java.util.stream.Collector-) 
+with [String.join](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#join-java.lang.CharSequence-java.lang.Iterable-) 
+in cases where a collection of Strings is converted into a stream for the sole purpose of concatenating its values.
+* [Remove Redundant Type Casts](https://jsparrow.github.io/rules/remove-redundant-type-cast.html): Finds and removes 
 casting expressions whose target types matches exactly the type of the original expression.  
-* [Remove Collections.addAll](https://jsparrow.github.io/rules/remove-collections-add-all.html) moves the parameters 
+* [Remove Collection.addAll](https://jsparrow.github.io/rules/remove-collection-add-all.html): Moves the parameters 
 used in [Collection.addAll](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#addAll-java.util.Collection-) 
 to the constructor which is used for initializing a collection. 
     
