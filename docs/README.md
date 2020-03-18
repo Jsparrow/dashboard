@@ -15,7 +15,7 @@ title: jSparrow
 
 jSparrow 3.15.0 introduces a rich extension of the rules set and also brings some important UI improvements.
 
-### New Rules to improve performance and readability
+### New Rules to Improve Performance and Readability
 
 * [Use String Join](https://jsparrow.github.io/rules/use-string-join.html): Replaces 
 [stream().collect(Collectors.joining())](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#collect-java.util.stream.Collector-) 
@@ -28,7 +28,7 @@ used in [Collection::addAll](https://docs.oracle.com/javase/8/docs/api/java/util
 to the constructor which is used for initializing the collection. 
     
 
-### UI improvements
+### UI Improvements
 
 * **Starting jSparrow from multiple projects simultaneously.** From now on, it is possible to run jSparrow in more than 
 one project simultaneously either by selecting multiple projects in 
