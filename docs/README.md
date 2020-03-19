@@ -98,7 +98,7 @@ Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.githu
 What did you intend to say?  
 "I have a new rule for your today!"*  
 
-jSparrow 3.11.0 brings a new rule for enforcing coding conventions.
+jSparrow 3.11.0 brings a new rule for enforcing coding conventions. 
 
 * [Hide Default Constructor In Utility Classes](https://jsparrow.github.io/rules/hide-default-constructor-in-utility-classes.html):
 Utility classes are classes containing `static` methods and fields only. Such classes should not be instantiated. The default constructor will be hidden by adding a private constructor to utility classes, which prevents their instantiation.
@@ -114,11 +114,11 @@ Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.githu
 *Against the black void, looms the lunar sphere.  
 Hungry bugs haunt, satisfied by fright.  
 Oh my! The programmer's faces blanch in fear.  
-And thus jSparrow will eat all night.*
+And thus jSparrow will eat all night.* 
 
 jSparrow brings a new rule to simplify the use of [`Optional`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html) in Java 9 and above.
 
-* [Use Optional::ifPresentOrElse](https://jsparrow.github.io/rules/optional-if-present-or-else.html) replaces if-then-else statements checking for [`Optional#isPresent`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isPresent()) with a single call to [`Optional#ifPresentOrElse`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#ifPresentOrElse(java.util.function.Consumer,java.lang.Runnable)).
+* [Use Optional::ifPresentOrElse](https://jsparrow.github.io/rules/optional-if-present-or-else.html) replaces if-then-else statements checking for [`Optional#isPresent`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#isPresent()) with a single call to [`Optional#ifPresentOrElse`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Optional.html#ifPresentOrElse(java.util.function.Consumer,java.lang.Runnable)). 
 
 [***66 automatic refactoring rules***](https://jsparrow.github.io/rules/) are now supported by jSparrow.
 
@@ -152,8 +152,8 @@ jSparrow has been busy studying new rules and is therefore happy to announce tha
 
 ### New rules to improve performance and readability!
 
-* [Use Collections Singleton List](https://jsparrow.github.io/rules/use-collections-singleton-list.html) offers an efficient way to create empty or single-element lists.
-* [Remove Null-Checks Before Instanceof](https://jsparrow.github.io/rules/remove-null-check-before-instanceof.html) recognizes redundant null-checks before `instanceof` and removes them.
+* [Use Collections Singleton List](https://jsparrow.github.io/rules/use-collections-singleton-list.html) offers an efficient way to create empty or single-element lists. 
+* [Remove Null-Checks Before Instanceof](https://jsparrow.github.io/rules/remove-null-check-before-instanceof.html) recognizes redundant null-checks before `instanceof` and removes them. 
 
 Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-8-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-5-0)!
 
@@ -164,9 +164,9 @@ Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.githu
 
 *"I hope you love sparrows too. It is economical. It saves going to heaven."*
 
-This release makes jSparrow compatible with [**Lombok**](https://projectlombok.org/) and introduces a new refactoring rule.
+This release makes jSparrow compatible with [**Lombok**](https://projectlombok.org/) and introduces a new refactoring rule. 
 
-The new rule [Replace For-Loop with `Stream::takeWhile`](https://jsparrow.github.io/rules/enhanced-for-loop-to-stream-take-while-rule.html) automatically replaces the enhanced for-loops iterating over the first elements of a collection with [`Stream::takeWhile`](https://docs.oracle.com/javase/9/docs/api/java/util/stream/Stream.html#takeWhile-java.util.function.Predicate-), thus extending the scope of functional programming offered by Java.
+The new rule [Replace For-Loop with `Stream::takeWhile`](https://jsparrow.github.io/rules/enhanced-for-loop-to-stream-take-while-rule.html) automatically replaces the enhanced for-loops iterating over the first elements of a collection with [`Stream::takeWhile`](https://docs.oracle.com/javase/9/docs/api/java/util/stream/Stream.html#takeWhile-java.util.function.Predicate-), thus extending the scope of functional programming offered by Java. 
 
 This new rule brings jSparrow to a total of [***62 automatic refactoring rules!***](https://jsparrow.github.io/rules/)
 
@@ -176,9 +176,9 @@ Find more information in our [jSparrow Eclipse](https://jsparrow.github.io/eclip
 
 ## New Rule in jSparrow 3.7.0 and jSparrow Maven Plugin 2.4.0
 
-We are looking forward to the next jSparrow release which will include an additional refactoring rule and some bug fixes.
+We are looking forward to the next jSparrow release which will include an additional refactoring rule and some bug fixes. 
 
-jSparrow 3.7.0 and jSparrow Maven Plugin 2.4.0 have been tested extensively and are ready to be released on Thursday, July 18, 2019.
+jSparrow 3.7.0 and jSparrow Maven Plugin 2.4.0 have been tested extensively and are ready to be released on Thursday, July 18, 2019. 
 The new rule will have [Java 9](https://jsparrow.github.io/tags.html#Java_9), [Loop](https://jsparrow.github.io/tags.html#Loop) and [Lambda](https://jsparrow.github.io/tags.html#Lambda) tags.
 
 ***Stay tuned!***
@@ -189,12 +189,12 @@ The new rule will have [Java 9](https://jsparrow.github.io/tags.html#Java_9), [L
 
 jSparrow is not resting and brings three new rules with this latest release!
 
-**Checkout the new rules:**
-* [**Use Factory Methods for Collections**](https://jsparrow.github.io/rules/collections-factory-methods.html):
-Replaces ```Collections.unmodifiable{List|Set|Map}``` with  convenient factory methods introduced in Java 9 for creating immutable collections [```List.of```](https://docs.oracle.com/javase/9/docs/api/java/util/List.html#of-E...-), [```Set.of```](https://docs.oracle.com/javase/9/docs/api/java/util/Set.html#of-E...-) and [```Map.ofEntries```](https://docs.oracle.com/javase/9/docs/api/java/util/Map.html#ofEntries-java.util.Map.Entry...-).
-* [**Reorder Modifiers**](https://jsparrow.github.io/rules/reorder-modifiers.html):
+**Checkout the new rules:** 
+* [**Use Factory Methods for Collections**](https://jsparrow.github.io/rules/collections-factory-methods.html): 
+Replaces ```Collections.unmodifiable{List|Set|Map}``` with  convenient factory methods introduced in Java 9 for creating immutable collections [```List.of```](https://docs.oracle.com/javase/9/docs/api/java/util/List.html#of-E...-), [```Set.of```](https://docs.oracle.com/javase/9/docs/api/java/util/Set.html#of-E...-) and [```Map.ofEntries```](https://docs.oracle.com/javase/9/docs/api/java/util/Map.html#ofEntries-java.util.Map.Entry...-). 
+* [**Reorder Modifiers**](https://jsparrow.github.io/rules/reorder-modifiers.html): 
 Reorders the modifiers on class declarations, field declarations and method declarations according to the Java conventions.
-* [**Use List Sort**](https://jsparrow.github.io/rules/use-list-sort.html):
+* [**Use List Sort**](https://jsparrow.github.io/rules/use-list-sort.html): 
 Replaces static invocations of `Collections.sort(List, Comparator)` with `List.sort(Comparator)` introduced in Java 8.
 
 Now jSparrow offers a total number of [***61 automatic refactoring rules!***](https://jsparrow.github.io/rules/)!
@@ -205,18 +205,18 @@ Check out our release notes for [jSparrow Eclipse](https://jsparrow.github.io/ec
 
 ## New Rules in jSparrow 3.6.0 and jSparrow Maven Plugin 2.3.0
 
-We are happy to announce that the next jSparrow release will have ***three*** additional refactoring rules.
+We are happy to announce that the next jSparrow release will have ***three*** additional refactoring rules. 
 
-jSparrow 3.6.0 and jSparrow Maven Plugin 2.3.0 have been tested extensively and are ready to be released on Wednesday, June 19, 2019.
-The new rules will contain tags like [Java 9](https://jsparrow.github.io/tags.html#Java_9), [Old Language Constructs](https://jsparrow.github.io/tags.html#Old_Language_Constructs), [Coding Conventions](https://jsparrow.github.io/tags.html#Coding_Conventions), and more.
+jSparrow 3.6.0 and jSparrow Maven Plugin 2.3.0 have been tested extensively and are ready to be released on Wednesday, June 19, 2019. 
+The new rules will contain tags like [Java 9](https://jsparrow.github.io/tags.html#Java_9), [Old Language Constructs](https://jsparrow.github.io/tags.html#Old_Language_Constructs), [Coding Conventions](https://jsparrow.github.io/tags.html#Coding_Conventions), and more. 
 
-Moreover, jSparrow 3.6.0 will be ready for [Eclipse 2019-06](https://www.eclipse.org/downloads/packages/release/2019-06) which will be released on the same date.
+Moreover, jSparrow 3.6.0 will be ready for [Eclipse 2019-06](https://www.eclipse.org/downloads/packages/release/2019-06) which will be released on the same date. 
 
 ***Stay tuned!***
 
 ## jSparrow 3.5.1 released!
 
-We have introduced a [Customer Portal](https://jsparrow.atlassian.net/servicedesk/customer/portal/1), where you can report bugs and get support. There is also a new email address for customer support: [support@jsparrow.eu](mailto:support@jsparrow.eu)
+We have introduced a [Customer Portal](https://jsparrow.atlassian.net/servicedesk/customer/portal/1), where you can report bugs and get support. There is also a new email address for customer support: [support@jsparrow.eu](mailto:support@jsparrow.eu) 
 
 This release adds the link to our Customer Portal and the new email address to the help dialogs in jSparrow.
 
@@ -236,7 +236,7 @@ Find more information in our [jSparrow Eclipse](https://jsparrow.github.io/eclip
 
 We are happy to announce that jSparrow will soon be enriched with a new rule!
 
-jSparrow 3.5.0 and jSparrow Maven Plugin 2.2.0 are thoroughly tested and will be released on Thursday, May 16, 2019.
+jSparrow 3.5.0 and jSparrow Maven Plugin 2.2.0 are thoroughly tested and will be released on Thursday, May 16, 2019. 
 This release contains a new rule with the [Old Language Constructs](https://jsparrow.github.io/tags.html#Old_Language_Constructs) tag.
 
 ***Stay tuned for more information!***
