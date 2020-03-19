@@ -36,6 +36,8 @@ the project explorer or by selecting a parent project consisting of multiple chi
 * **Sorting the results in Summary Page.** The results in jSparrow Summary Page can now be sorted by the number of 
 findings, the remediation costs or by the rule names.  
 
+[***73 automatic refactoring rules***](https://jsparrow.github.io/rules/) are now supported by jSparrow.
+
 Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-15-0) 
 and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-12-0)!
 
