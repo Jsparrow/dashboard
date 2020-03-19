@@ -75,3 +75,7 @@ docs/.vuepress/dist
 # json lock
 package-lock.json
 
+# IntelliJ Project Files
+node_modules/
+.idea/
+

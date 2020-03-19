@@ -6,6 +6,43 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.15.0 and jSparrow Maven Plugin 2.12.0 released
+
+*Glad to see you, little bird;  
+ 'Twas your little chirp I heard:  
+ What did you intend to say?  
+ "Let me jSparrow your code today"?*
+
+jSparrow 3.15.0 introduces a rich extension of the rules set and also brings some important UI improvements.
+
+### New Rules to Improve Performance and Readability
+
+* [Use String Join](https://jsparrow.github.io/rules/use-string-join.html): Replaces 
+[stream().collect(Collectors.joining())](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#collect-java.util.stream.Collector-) 
+with [String.join](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#join-java.lang.CharSequence-java.lang.Iterable-) 
+in cases where a collection of Strings is converted into a stream for the sole purpose of concatenating its values.
+* [Remove Redundant Type Casts](https://jsparrow.github.io/rules/remove-redundant-type-cast.html): Finds and removes 
+casting expressions where the target type and the type of the original expression are identical.  
+* [Remove Collection::addAll](https://jsparrow.github.io/rules/remove-collection-add-all.html): Moves the parameters 
+used in [Collection::addAll](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#addAll-java.util.Collection-) 
+to the constructor which is used for initializing the collection. 
+    
+
+### UI Improvements
+
+* **Starting jSparrow from multiple projects simultaneously.** From now on, it is possible to run jSparrow in more than 
+one project simultaneously either by selecting multiple projects in 
+the project explorer or by selecting a parent project consisting of multiple child projects.
+* **Sorting the results in Summary Page.** The results in jSparrow Summary Page can now be sorted by the number of 
+findings, the remediation costs or by the rule names.  
+
+[***73 automatic refactoring rules***](https://jsparrow.github.io/rules/) are now supported by jSparrow.
+
+Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-15-0) 
+and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-12-0)!
+
+***"Programs must be written for people to read, and only incidentally for machines to execute." ― Harold Abelson***
+
 ## jSparrow 3.14.0 and jSparrow Maven Plugin 2.11.0 released
 
 *With a break in the weather the sun shines through  
