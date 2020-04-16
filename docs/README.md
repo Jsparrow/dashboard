@@ -6,6 +6,23 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.16.0 and jSparrow Maven Plugin 2.13.0 released
+
+*When refactoring is harassing  
+And is driving you mad,  
+Simply use jSparrow  
+You will end up being glad.*
+
+jSparrow 3.16.0 brings a new refactoring rule for eliminating security flaws.
+
+* [Use Parameterized Query](https://jsparrow.github.io/rules/use-parameterized-query.html): This rule prevents SQL injections by replacing SQL [Statements](https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html) with [PreparedStatements](https://docs.oracle.com/javase/8/docs/api/java/sql/PreparedStatement.html) and extracting the user inputs that are dynamically concatenated with the SQL query into parameters of the PreparedStatement. 
+
+jSparrow supports [***74 automatic refactoring rules***](https://jsparrow.github.io/rules/) in total.
+
+Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-16-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-13-0)!
+
+***"Rarely is anyone thanked for the work they did to prevent the disaster that didn't happen." ― Mikko Hypponen***
+
 ## jSparrow 3.15.0 and jSparrow Maven Plugin 2.12.0 released
 
 *Glad to see you, little bird;  
