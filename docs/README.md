@@ -8,9 +8,9 @@ title: jSparrow
 
 ## jSparrow 3.16.0 and jSparrow Maven Plugin 2.13.0 released
 
-*When refactoring is harassing
-And driving you mad,
-Simply use jSparrow
+*When refactoring is harassing  
+And driving you mad,  
+Simply use jSparrow  
 You will end up being glad.*
 
 jSparrow 3.16.0 brings a new refactoring rule for eliminating security flaws.
