@@ -6,6 +6,26 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.17.0 and jSparrow Maven Plugin 2.14.0 released
+
+*I stared at code silently  
+And watched bugs crawl by.  
+They reminded me of jSparrow,  
+I should give it a try.*
+
+jSparrow 3.17.0 brings a second security rule for preventing SQL Injection vulnerabilities.
+
+[**Escape User Inputs in SQL Queries:**](https://jsparrow.github.io/rules/escape-user-inputs-in-sql-queries.html)
+This rule detects potential user inputs that are concatenated with SQL queries and wraps them in [ESAPI.encoder().encodeForSql(codec, input)](https://javadoc.io/doc/org.owasp.esapi/esapi/latest/org/owasp/esapi/Encoder.html). 
+In this way, the contents of the user input will only be considered as values and not as code, thus preventing the SQL Injection vulnerabilities.
+
+jSparrow supports [***75 automatic refactoring rules***](https://jsparrow.github.io/rules/) in total.
+
+Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-17-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-14-0)!
+
+***"A good programmer is someone who always looks both ways before crossing a one-way street."  
+― Doug Linder***
+
 ## jSparrow 3.16.0 and jSparrow Maven Plugin 2.13.0 released
 
 *When refactoring is harassing  
