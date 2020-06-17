@@ -6,6 +6,37 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.18.0 and jSparrow Maven Plugin 2.15.0 released
+
+*A poem should go here  
+with nice rhyming verses  
+there is a reason
+why we do literature in school*
+
+jSparrow 3.18.0 enriches the refactoring rule set with three additional rules for preventing SQL Injection vulnerabilities and improving performance. 
+
+### New Rules Improving Security and Performance
+
+* [*Use Parameterized JPA Query*](https://jsparrow.github.io/rules/use-parameterized-jpa-query.html):
+This rule finds [JPQL](https://docs.oracle.com/javaee/7/tutorial/persistence-querylanguage005.htm#BNBUF) queries that are built by dynamically concatenating query fragments with potential user inputs and replaces them with parameterized JPQL queries. 
+
+* [*Avoid Concatenation in Logging Statements*](https://jsparrow.github.io/rules/avoid-concatenation-in-logging-statements.html):
+Replaces string concatenations passed in logging statements with built-in string formatting. 
+This spares some needless computation in case the logging level is not low enough to show the message. 
+Additionally, a built-in formatted string message also improves the readability. 
+
+* [*Use Arrays Stream*](https://jsparrow.github.io/rules/use-arrays-stream.html):
+Transforms, when possible, `Arrays.asList(T..values).stream()` into an un-boxed specialized stream (i.e., [`IntStream`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/IntStream.html), [`LongStream`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/DoubleStream.html),
+ or [`DoubleStream`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/DoubleStream.html)). 
+Otherwise, the same stream generation is replaced with the short hand method [Stream.of(T... values)](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#of-T...-).
+
+This brings jSparrow to a total of [***78 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-18-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-15-0)!
+
+***"A quote goes here."  
+― Author name***
+
 ## jSparrow 3.17.0 and jSparrow Maven Plugin 2.14.0 released
 
 *I stared at code silently  
