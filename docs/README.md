@@ -1,10 +1,38 @@
 ---
 navbar: false
-footer: © jSparrow a brand of Splendit IT-Consulting GmbH 2018
+footer: © jSparrow a brand of Splendit IT-Consulting GmbH 2020
 title: jSparrow
 ---
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
+
+## jSparrow 3.18.0 and jSparrow Maven Plugin 2.15.0 released
+
+The midsummer release of jSparrow 3.18.0 enriches the refactoring ruleset with three additional rules concerning SQL injection vulnerabilities and performance improvements. 
+
+### Security and Performance Rules
+
+* [*Use Parameterized JPA Query*](https://jsparrow.github.io/rules/use-parameterized-jpa-query.html):
+It is a common misconception that JPA queries are immune to SQL injections, however, there are ways to secure them. 
+This rule finds [JPQL](https://docs.oracle.com/javaee/7/tutorial/persistence-querylanguage005.htm#BNBUF) queries that are built by dynamically concatenating query fragments with potential user inputs and replaces them with parameterized JPQL queries. 
+With this measure, the JDBC driver will escape input data before it is executed and therefore prevent SQL injection. 
+
+* [*Avoid Concatenation in Logging Statements*](https://jsparrow.github.io/rules/avoid-concatenation-in-logging-statements.html):
+Replaces string concatenations passed in logging statements with built-in string formatting. 
+This spares some needless computation in case the logging level is not low enough to show the message. 
+Additionally, a built-in formatted string message improves the readability, too. 
+
+* [*Use Arrays Stream*](https://jsparrow.github.io/rules/use-arrays-stream.html):
+Transforms `Arrays.asList(T..values).stream()` into an un-boxed specialized stream (i.e., [`IntStream`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/IntStream.html), [`LongStream`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/DoubleStream.html),
+ or [`DoubleStream`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/DoubleStream.html)) whenever possible. 
+Otherwise, the same stream generation is replaced with the shorthand method [Stream.of(T... values)](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#of-T...-).
+
+This brings jSparrow to a total of [***78 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-18-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-15-0)!
+
+***"Security is always excessive until it’s not enough."  
+― Robbie Sinclair***
 
 ## jSparrow 3.17.0 and jSparrow Maven Plugin 2.14.0 released
 
@@ -13,11 +41,11 @@ And watched bugs crawl by.
 They reminded me of jSparrow,  
 I should give it a try.*
 
-jSparrow 3.17.0 brings a second security rule for preventing SQL Injection vulnerabilities.
+jSparrow 3.17.0 brings a second security rule for preventing SQL injection vulnerabilities.
 
 [**Escape User Inputs in SQL Queries:**](https://jsparrow.github.io/rules/escape-user-inputs-in-sql-queries.html)
 This rule detects potential user inputs that are concatenated with SQL queries and wraps them in [ESAPI.encoder().encodeForSql(codec, input)](https://javadoc.io/doc/org.owasp.esapi/esapi/latest/org/owasp/esapi/Encoder.html). 
-In this way, the contents of the user input will only be considered as values and not as code, thus preventing the SQL Injection vulnerabilities.
+In this way, the contents of the user input will only be considered as values and not as code, thus preventing the SQL injection vulnerabilities.
 
 jSparrow supports [***75 automatic refactoring rules***](https://jsparrow.github.io/rules/) in total.
 
