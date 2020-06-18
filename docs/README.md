@@ -8,11 +8,6 @@ title: jSparrow
 
 ## jSparrow 3.18.0 and jSparrow Maven Plugin 2.15.0 released
 
-*A poem should go here  
-with nice rhyming verses  
-there is a reason
-why we do literature in school*
-
 jSparrow 3.18.0 enriches the refactoring rule set with three additional rules for preventing SQL Injection vulnerabilities and improving performance. 
 
 ### New Rules Improving Security and Performance
@@ -34,8 +29,8 @@ This brings jSparrow to a total of [***78 automatic refactoring rules***](https:
 
 Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-18-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-15-0)!
 
-***"A quote goes here."  
-― Author name***
+***"Security is always excessive until it’s not enough."  
+― Robbie Sinclair***
 
 ## jSparrow 3.17.0 and jSparrow Maven Plugin 2.14.0 released
 
