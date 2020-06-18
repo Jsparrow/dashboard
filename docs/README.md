@@ -8,22 +8,24 @@ title: jSparrow
 
 ## jSparrow 3.18.0 and jSparrow Maven Plugin 2.15.0 released
 
-jSparrow 3.18.0 enriches the refactoring rule set with three additional rules concerning SQL Injection vulnerabilities and performance improvements. 
+The midsummer release of jSparrow 3.18.0 enriches the refactoring ruleset with three additional rules concerning SQL Injection vulnerabilities and performance improvements. 
 
 ### Security and Performance Rules
 
 * [*Use Parameterized JPA Query*](https://jsparrow.github.io/rules/use-parameterized-jpa-query.html):
-This rule finds [JPQL](https://docs.oracle.com/javaee/7/tutorial/persistence-querylanguage005.htm#BNBUF) queries that are dynamically built by concatenating query fragments with potential user inputs and replaces them with parameterized JPQL queries. 
+It is a common misconception that JPA queries are immune to SQL injections, however there are ways to secure them. 
+This rule finds [JPQL](https://docs.oracle.com/javaee/7/tutorial/persistence-querylanguage005.htm#BNBUF) queries that are built by dynamically concatenating query fragments with potential user inputs and replaces them with parameterized JPQL queries. 
+With this measure, the JDBC driver will escape input data before it is executed and therefore prevent SQL injection. 
 
 * [*Avoid Concatenation in Logging Statements*](https://jsparrow.github.io/rules/avoid-concatenation-in-logging-statements.html):
 Replaces string concatenations passed in logging statements with built-in string formatting. 
 This spares some needless computation in case the logging level is not low enough to show the message. 
-Additionally, a built-in formatted string message also improves the readability. 
+Additionally, a built-in formatted string message improves the readability, too. 
 
 * [*Use Arrays Stream*](https://jsparrow.github.io/rules/use-arrays-stream.html):
-Transforms, when possible, `Arrays.asList(T..values).stream()` into an un-boxed specialized stream (i.e., [IntStream](https://docs.oracle.com/javase/8/docs/api/java/util/stream/IntStream.html), [LongStream](https://docs.oracle.com/javase/8/docs/api/java/util/stream/DoubleStream.html),
- or [DoubleStream](https://docs.oracle.com/javase/8/docs/api/java/util/stream/DoubleStream.html)). 
-Otherwise, the same stream generation is replaced with the short hand method [Stream.of(T... values)](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#of-T...-).
+Transforms `Arrays.asList(T..values).stream()` into an un-boxed specialized stream (i.e., [`IntStream`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/IntStream.html), [`LongStream`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/DoubleStream.html),
+ or [`DoubleStream`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/DoubleStream.html)) whenever possible. 
+Otherwise, the same stream generation is replaced with the shorthand method [Stream.of(T... values)](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#of-T...-).
 
 This brings jSparrow to a total of [***78 automatic refactoring rules***](https://jsparrow.github.io/rules/).
 
