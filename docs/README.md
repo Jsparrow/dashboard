@@ -1,6 +1,6 @@
 ---
 navbar: false
-footer: © jSparrow a brand of Splendit IT-Consulting GmbH 2018
+footer: © jSparrow a brand of Splendit IT-Consulting GmbH 2020
 title: jSparrow
 ---
 
@@ -8,12 +8,12 @@ title: jSparrow
 
 ## jSparrow 3.18.0 and jSparrow Maven Plugin 2.15.0 released
 
-The midsummer release of jSparrow 3.18.0 enriches the refactoring ruleset with three additional rules concerning SQL Injection vulnerabilities and performance improvements. 
+The midsummer release of jSparrow 3.18.0 enriches the refactoring ruleset with three additional rules concerning SQL injection vulnerabilities and performance improvements. 
 
 ### Security and Performance Rules
 
 * [*Use Parameterized JPA Query*](https://jsparrow.github.io/rules/use-parameterized-jpa-query.html):
-It is a common misconception that JPA queries are immune to SQL injections, however there are ways to secure them. 
+It is a common misconception that JPA queries are immune to SQL injections, however, there are ways to secure them. 
 This rule finds [JPQL](https://docs.oracle.com/javaee/7/tutorial/persistence-querylanguage005.htm#BNBUF) queries that are built by dynamically concatenating query fragments with potential user inputs and replaces them with parameterized JPQL queries. 
 With this measure, the JDBC driver will escape input data before it is executed and therefore prevent SQL injection. 
 
@@ -41,11 +41,11 @@ And watched bugs crawl by.
 They reminded me of jSparrow,  
 I should give it a try.*
 
-jSparrow 3.17.0 brings a second security rule for preventing SQL Injection vulnerabilities.
+jSparrow 3.17.0 brings a second security rule for preventing SQL injection vulnerabilities.
 
 [**Escape User Inputs in SQL Queries:**](https://jsparrow.github.io/rules/escape-user-inputs-in-sql-queries.html)
 This rule detects potential user inputs that are concatenated with SQL queries and wraps them in [ESAPI.encoder().encodeForSql(codec, input)](https://javadoc.io/doc/org.owasp.esapi/esapi/latest/org/owasp/esapi/Encoder.html). 
-In this way, the contents of the user input will only be considered as values and not as code, thus preventing the SQL Injection vulnerabilities.
+In this way, the contents of the user input will only be considered as values and not as code, thus preventing the SQL injection vulnerabilities.
 
 jSparrow supports [***75 automatic refactoring rules***](https://jsparrow.github.io/rules/) in total.
 
