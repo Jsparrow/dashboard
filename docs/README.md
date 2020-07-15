@@ -6,6 +6,42 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.19.0 and jSparrow Maven Plugin 2.16.0 released
+
+jSparrow 3.19.0 continues the series of security rules concerning injection attacks.
+
+### [Use Parameterized LDAP Query](https://jsparrow.github.io/rules/use-parameterized-ldap-query.html)
+
+Similar to SQL queries, the [LDAP](https://ldap.com/) search filters are also vulnerable to injection attacks.
+This rule parameterizes all potential user supplied input that are concatenated into an LDAP search filter. For instance, the following code:
+
+```java
+String userId = request.getParameter("user");
+String userPassword = request.getParameter("pass");
+NamingEnumeration<SearchResult> results = dirContext.search(
+		"ou=system", 
+		"(&(uid=" + userId + ")(userPassword=" + userPassword + "))", 
+		new SearchControls());
+```
+
+is transformed to: 
+```java
+String userId = request.getParameter("user");
+String userPassword = request.getParameter("pass");
+NamingEnumeration<SearchResult> results = dirContext.search(
+		"ou=system", 
+		"(&(uid={0})(userPassword={1}))", 
+		new Object[] { userId, userPassword }, 
+		new SearchControls());
+```
+
+This brings jSparrow to a total of [***79 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-19-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-16-0)!
+
+
+***"Technology trust is a good thing, but control is a better one." ― Stephane Nappo***
+
 ## jSparrow 3.18.0 and jSparrow Maven Plugin 2.15.0 released
 
 The midsummer release of jSparrow 3.18.0 enriches the refactoring ruleset with three additional rules concerning SQL injection vulnerabilities and performance improvements. 
