@@ -8,11 +8,11 @@ title: jSparrow
 
 ## jSparrow 3.20.0 and jSparrow Maven Plugin 2.17.0 released
 
-The focus of the new rules for jSparrow 3.20.0 release is on securing random number generators.  
+The focus of the new rules for jSparrow's 3.20.0 release is on securing random number generators.  
 
 ### [Reuse Random Objects](https://jsparrow.github.io/rules/reuse-random-objects.html)
 
-This rule extracts reusable `java.util.Random` objects, from local variables to class or instance fields. 
+This rule extracts reusable [`java.util.Random`](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html) objects from local variables to class or instance fields. 
 The goal is to improve the unpredictability of the generated values. Moreover, the rule reduces the number of objects created by the program.
 For instance, the following code:
 
@@ -37,7 +37,7 @@ public void foo() {
 
 ### [Use SecureRandom](https://jsparrow.github.io/rules/use-secure-random.html)
 
-This rule replaces pseudorandom number generators ([`java.util.Random`](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html)) with cryptographically strong random number generators (NRG), i.e., instances of [`java.security.SecureRandom` (NRG)](https://docs.oracle.com/javase/8/docs/api/java/security/SecureRandom.html). For instance, the following code snippet:
+This rule replaces pseudo-random number generators (PRNG), i.e., instances of [`Random`](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html) with cryptographically strong random number generators (RNG), i.e., instances of [`SecureRandom`](https://docs.oracle.com/javase/8/docs/api/java/security/SecureRandom.html). For instance, the following code snippet:
 
 ```java
 Random random = new Random();
