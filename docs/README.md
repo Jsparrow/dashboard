@@ -6,6 +6,58 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.20.0 and jSparrow Maven Plugin 2.17.0 released
+
+The focus of the new rules for jSparrow's 3.20.0 release is on securing random number generators.  
+
+### [Reuse Random Objects](https://jsparrow.github.io/rules/reuse-random-objects.html)
+
+This rule extracts reusable [`java.util.Random`](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html) objects from local variables to class or instance fields. 
+The goal is to improve the unpredictability of the generated values. Moreover, the rule reduces the number of objects created by the program.
+For instance, the following code:
+
+```java
+public void foo() {
+    Random random = new Random();
+    int nextIndex = random.nextInt();
+    //...
+}
+```
+
+is refactored to:
+
+```java
+private Random random = new Random();
+
+public void foo() {
+    int nextIndex = random.nextInt();
+    //...
+}
+```
+
+### [Use SecureRandom](https://jsparrow.github.io/rules/use-secure-random.html)
+
+This rule replaces pseudo-random number generators (PRNG), i.e., instances of [`Random`](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html) with cryptographically strong random number generators (RNG), i.e., instances of [`SecureRandom`](https://docs.oracle.com/javase/8/docs/api/java/security/SecureRandom.html). For instance, the following code snippet:
+
+```java
+Random random = new Random();
+int nextIndex = random.nextInt();
+```
+
+is refactored to: 
+
+```java
+Random random = new SecureRandom();
+int nextIndex = random.nextInt();
+```
+
+This brings jSparrow to a total of [***81 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-20-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-17-0)!
+
+
+***"Creativity is the ability to introduce order into the randomness of nature." ― Eric Hoffer***
+
 ## jSparrow 3.19.0 and jSparrow Maven Plugin 2.16.0 released
 
 jSparrow 3.19.0 continues the series of security rules concerning injection attacks.
