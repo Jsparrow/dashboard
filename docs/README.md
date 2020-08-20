@@ -17,7 +17,7 @@ The goal is to improve the unpredictability of the generated values. Moreover, t
 For instance, the following code:
 
 ```java
-public void foo(String value) {
+public void foo() {
     Random random = new Random();
     int nextIndex = random.nextInt();
     //...
@@ -29,7 +29,7 @@ is refactored to:
 ```java
 private Random random = new Random();
 
-public void foo(String value) {
+public void foo() {
     int nextIndex = random.nextInt();
     //...
 }
