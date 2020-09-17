@@ -6,6 +6,78 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.21.0 and jSparrow Maven Plugin 2.18.0 released
+
+The autumn jSparrow release brings improvements in performance, security, and I/O operations. 
+
+### [Use Offset Based String Methods](https://jsparrow.github.io/rules/use-offset-based-string-methods.html)
+
+This rule avoids creating intermediate String instances by making use of the overloaded offset based methods in the String API.
+
+__Pre__
+```java
+String greeting = "Hello World!";
+boolean startsWith = greeting.substring(6).startsWith("World");
+```
+
+__Post__
+```java
+String greeting = "Hello World!";
+boolean startsWith = greeting.startsWith("World", 6);
+```
+
+### [Create Temp Files Using Java NIO](https://jsparrow.github.io/rules/create-temp-files-using-java-nio.html)
+
+A suitable alternative for creating temporary files in security-sensitive applications is to use [`Files.createTempFile(String, String, FileAttribute<?>...)`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createTempFile(java.lang.String,java.lang.String,java.nio.file.attribute.FileAttribute...)). This rule replaces the temporary file creation using `java.io.File` by the alternative methods defined in `java.nio.file.Files`.
+
+__Pre__
+```java
+File file = File.createTempFile("myFile", ".tmp");
+```
+
+__Post__
+```java
+File file = Files.createTempFile("myFile", ".tmp").toFile();
+```
+
+### [Use Files.newBufferedReader](https://jsparrow.github.io/rules/use-files-buffered-reader.html)
+
+Java 7 introduced the [`java.nio.file.Files`](https://docs.oracle.com/javase/7/docs/api/java/nio/file/Files.html) class that contains convenience methods for operating on files. This rule makes use of the [`Files.newBufferedReader`](https://docs.oracle.com/javase/7/docs/api/java/nio/file/Files.html#newBufferedReader(java.nio.file.Path,%20java.nio.charset.Charset)) method for initializing `BufferedReader` objects to read text files in an efficient non-blocking manner.
+
+__Pre__
+```java
+String location = "path/to/file";
+BufferedReader br = new BufferedReader(new FileReader(location));
+```
+
+__Post__
+```java
+String location = "path/to/file";
+BufferedReader br = Files.newBufferedReader(Paths.get(location), Charset.defaultCharset());
+```
+
+### [Use Predefined Standard Charset](https://jsparrow.github.io/rules/use-predefined-standard-charset.html)
+
+The invocations of [`Charset.forName(String)`](https://docs.oracle.com/javase/7/docs/api/java/nio/charset/Charset.html#forName(java.lang.String)) are replaced by the constants defined in [`StandardCharsets`](https://docs.oracle.com/javase/7/docs/api/java/nio/charset/StandardCharsets.html).
+
+__Pre__
+```java
+Charset c = Charset.forName("UTF-8");
+```
+
+__Post__
+```java
+Charset c = StandardCharsets.UTF_8;
+```
+
+---
+
+jSparrow provides now a total of [***85 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-21-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-18-0)!
+
+***"'That hardly ever happens' is another way of saying 'it happens'." ― Douglas Crockford***
+
 ## jSparrow 3.20.0 and jSparrow Maven Plugin 2.17.0 released
 
 The focus of the new rules for jSparrow's 3.20.0 release is on securing random number generators.  
