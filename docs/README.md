@@ -70,6 +70,7 @@ __Post__
 Charset c = StandardCharsets.UTF_8;
 ```
 
+---
 
 jSparrow provides now a total of [***85 automatic refactoring rules***](https://jsparrow.github.io/rules/).
 
