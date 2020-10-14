@@ -36,7 +36,7 @@ This brings jSparrow to a total of [***86 automatic refactoring rules***](https:
 Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-22-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-19-0)!
 
 
-***"Simplicity is prerequisite for reliability." ― Edsger Dijkstra***
+***"Simplicity is prerequisite for reliability." ― Edsger W. Dijkstra***
 
 ## jSparrow 3.21.0 and jSparrow Maven Plugin 2.18.0 released
 
