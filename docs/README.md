@@ -6,6 +6,38 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.22.0 and jSparrow Maven Plugin 2.19.0 released
+
+jSparrow introduces a new rule for optimizing the I/O operations on text files. 
+
+### [Use Files.newBufferedWriter](https://jsparrow.github.io/rules/use-files-buffered-writer.html)
+
+This rule makes use of the [`Files.newBufferedWriter`](https://docs.oracle.com/javase/7/docs/api/java/nio/file/Files.html#newBufferedWriter(java.nio.file.Path,%20java.nio.charset.Charset,%20java.nio.file.OpenOption...)) method for initializing [`BufferedWriter`](https://docs.oracle.com/javase/8/docs/api/java/io/BufferedWriter.html) objects to write text files in an efficient manner.
+For instance, the following code:
+
+```java
+String location = "path/to/file";
+try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(new File(location), charset))) {
+	//...
+}
+```
+
+is refactored to:
+
+```java
+String location = "path/to/file";
+try (BufferedWriter bufferedWriter = Files.newBufferedWriter(Paths.get(location), charset)) {
+	//...
+}
+```
+
+This brings jSparrow to a total of [***86 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-22-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-19-0)!
+
+
+***"Simplicity is prerequisite for reliability." ― Edsger W. Dijkstra***
+
 ## jSparrow 3.21.0 and jSparrow Maven Plugin 2.18.0 released
 
 The autumn jSparrow release brings improvements in performance, security, and I/O operations. 
