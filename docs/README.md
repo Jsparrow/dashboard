@@ -17,7 +17,8 @@ For instance, the following code:
 
 ```java
 String location = "path/to/file";
-try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(new File(location), charset))) {
+try (BufferedWriter bufferedWriter = new BufferedWriter(
+		new FileWriter(new File(location), charset))) {
 	//...
 }
 ```
@@ -26,7 +27,8 @@ is refactored to:
 
 ```java
 String location = "path/to/file";
-try (BufferedWriter bufferedWriter = Files.newBufferedWriter(Paths.get(location), charset)) {
+try (BufferedWriter bufferedWriter = Files.newBufferedWriter(
+		Paths.get(location), charset)) {
 	//...
 }
 ```
