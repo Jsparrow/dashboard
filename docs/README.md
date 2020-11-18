@@ -6,6 +6,49 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.23.0 and jSparrow Maven Plugin 3.0.0 released
+
+We are excited to announce the major update of ***jSparrow Maven Plugin 3.0.0*** with our regular monthly release. 
+The key new feature in this update is the maven goal [`jsparrow:demo`](https://jsparrow.github.io/maven/getting-started.html#demo) that makes the jSparrow's static analysis capacity available to ***everyone***.
+Additional features are introduced to make jSparrow more customizable and more flexible for the users.
+
+### [The jSparrow `demo` Goal](https://jsparrow.github.io/maven/getting-started.html#demo)
+
+This maven plugin goal is introduced to allow users for trying the jSparrow Maven Plugin on their sources. 
+Similar to the [`refactor`](https://jsparrow.github.io/maven/getting-started.html#refactor) goal, the `demo` goal analyzes the project and computes refactorings with the selected rules.
+As a result, jSparrow generates an HTML report with the computed findings. Similar reports are available in the statistics page (e.g., for [jenkins-core](https://jsparrow.github.io/statistics/jenkins-statistics.html?p=jenkins-core)).
+
+### [The `formatter` Parameter](https://jsparrow.github.io/maven/additional-configuration.html#eclipse-formatter-file)
+
+A new parameter is added to the `refactor` goal, to allow users to specify a customized Eclipse formatter. 
+Any customized formatter can be exported from the Eclipse IDE and provided to `refactor` goal through the `formatter` parameter. 
+
+### [The `selectedSources` Parameter](https://jsparrow.github.io/maven/getting-started.html#refactor)
+
+A new parameter is added to the `refactor` goal to allow users for specifying the sources that jSparrow shall refactor.
+[Glob expressions](https://docs.oracle.com/javase/tutorial/essential/io/fileOps.html#glob) can be used for specifying the selected sources. 
+
+
+### [**Use Comparator Methods**](https://jsparrow.github.io/rules/use-comparator-methods.html)
+
+The topic of jSparrow rules during this month has been to refactor the constructs used as [`Comparator`](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html) instances. For example, the following code:
+```java
+users.sort((user1, user2) -> user1.getUserId().compareTo(user2.getUserId()));
+```
+
+is transformed to: 
+
+```java
+users.sort(Comparator.comparingLong(User::getUserId));
+```
+
+This brings jSparrow to a total of [***87 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-23-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3.0.0)!
+
+
+***"Programs must be written for people to read, and only incidentally for machines to execute." ― Harold Abelson***
+
 ## jSparrow 3.22.0 and jSparrow Maven Plugin 2.19.0 released
 
 jSparrow introduces a new rule for optimizing the I/O operations on text files. 
