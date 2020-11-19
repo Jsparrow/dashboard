@@ -6,7 +6,52 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
-## jSparrow 3.22.0 and jSparrow Maven Plugin 2.19.0 released
+## jSparrow 3.23.0 and jSparrow Maven Plugin 3.0.0 Released
+
+We are excited to announce the major update of ***jSparrow Maven Plugin 3.0.0*** with our regular monthly release. 
+The new key feature in this update is the Maven goal [`jsparrow:report`](https://jsparrow.github.io/maven/getting-started.html#report) that makes jSparrow's static analysis capabilities available to ***everyone***.
+More features are added to support **standard formatters** and to specify the sources to refactor using [glob expressions](ssh://git@bitbucket.splendit.loc:7999/jtp/maven-plugin-tests.git).
+The new updates make jSparrow more friendly to users who work with diverse IDEs or DevOps tools.
+
+### [The jSparrow `report` Goal](https://jsparrow.github.io/maven/getting-started.html#report)
+
+This Maven plugin goal is introduced to allow users to try the jSparrow Maven plugin on their sources for free. 
+Similar to the [`refactor`](https://jsparrow.github.io/maven/getting-started.html#refactor) goal, the `report` goal analyzes the project and computes refactorings with the selected rules.  
+As a result, jSparrow generates an HTML report with the computed findings. Similar reports are available in the statistics page (e.g., for [jenkins-core](https://jsparrow.github.io/statistics/jenkins-statistics.html?p=jenkins-core)).
+
+### [The `formatter` Parameter](https://jsparrow.github.io/maven/additional-configuration.html#eclipse-formatter-file)
+
+A new parameter is added to the `refactor` goal, to allow users to specify a customized Eclipse formatter.  
+Any customized formatter can be exported from the Eclipse IDE and provided to the `refactor` goal through the `formatter` parameter. 
+
+### [The `selectedSources` Parameter](https://jsparrow.github.io/maven/getting-started.html#refactor)
+
+A new parameter is added to the `refactor` goal to allow users to specify sources that jSparrow shall consider for refactorings.
+[Glob expressions](https://docs.oracle.com/javase/tutorial/essential/io/fileOps.html#glob) can be used for specifying the selected sources. 
+
+
+### [**Use Comparator Methods**](https://jsparrow.github.io/rules/use-comparator-methods.html)
+
+The topic of jSparrow rules during this month has been to refactor the constructs used as [`Comparator`](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html) instances. For example, the following code:
+```java
+users.sort((user1, user2) -> user1.getUserId().compareTo(user2.getUserId()));
+```
+
+is transformed to: 
+
+```java
+users.sort(Comparator.comparingLong(User::getUserId));
+```
+
+This brings jSparrow to a total of [***87 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-23-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3.0.0)!
+
+
+***"Programs must be written for people to read, and only incidentally for machines to execute."***  
+***― Harold Abelson***
+
+## jSparrow 3.22.0 and jSparrow Maven Plugin 2.19.0 Released
 
 jSparrow introduces a new rule for optimizing the I/O operations on text files. 
 
@@ -40,7 +85,7 @@ Find out more information in the Release Notes for [jSparrow Eclipse](https://js
 
 ***"Simplicity is prerequisite for reliability." ― Edsger W. Dijkstra***
 
-## jSparrow 3.21.0 and jSparrow Maven Plugin 2.18.0 released
+## jSparrow 3.21.0 and jSparrow Maven Plugin 2.18.0 Released
 
 The autumn jSparrow release brings improvements in performance, security, and I/O operations. 
 
@@ -112,7 +157,7 @@ Find out more information in the Release Notes for [jSparrow Eclipse](https://js
 
 ***"'That hardly ever happens' is another way of saying 'it happens'." ― Douglas Crockford***
 
-## jSparrow 3.20.0 and jSparrow Maven Plugin 2.17.0 released
+## jSparrow 3.20.0 and jSparrow Maven Plugin 2.17.0 Released
 
 The focus of the new rules for jSparrow's 3.20.0 release is on securing random number generators.  
 
@@ -164,7 +209,7 @@ Find out more information in the Release Notes for [jSparrow Eclipse](https://js
 
 ***"Creativity is the ability to introduce order into the randomness of nature." ― Eric Hoffer***
 
-## jSparrow 3.19.0 and jSparrow Maven Plugin 2.16.0 released
+## jSparrow 3.19.0 and jSparrow Maven Plugin 2.16.0 Released
 
 jSparrow 3.19.0 continues the series of security rules concerning injection attacks.
 
@@ -200,7 +245,7 @@ Find out more information in the Release Notes for [jSparrow Eclipse](https://js
 
 ***"Technology trust is a good thing, but control is a better one." ― Stephane Nappo***
 
-## jSparrow 3.18.0 and jSparrow Maven Plugin 2.15.0 released
+## jSparrow 3.18.0 and jSparrow Maven Plugin 2.15.0 Released
 
 The midsummer release of jSparrow 3.18.0 enriches the refactoring ruleset with three additional rules concerning SQL injection vulnerabilities and performance improvements. 
 
@@ -228,7 +273,7 @@ Find out more information in the Release Notes for [jSparrow Eclipse](https://js
 ***"Security is always excessive until it’s not enough."  
 ― Robbie Sinclair***
 
-## jSparrow 3.17.0 and jSparrow Maven Plugin 2.14.0 released
+## jSparrow 3.17.0 and jSparrow Maven Plugin 2.14.0 Released
 
 *I stared at code silently  
 And watched bugs crawl by.  
@@ -248,7 +293,7 @@ Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.githu
 ***"A good programmer is someone who always looks both ways before crossing a one-way street."  
 ― Doug Linder***
 
-## jSparrow 3.16.0 and jSparrow Maven Plugin 2.13.0 released
+## jSparrow 3.16.0 and jSparrow Maven Plugin 2.13.0 Released
 
 *When refactoring is harassing  
 And is driving you mad,  
@@ -265,7 +310,7 @@ Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.githu
 
 ***"Rarely is anyone thanked for the work they did to prevent the disaster that didn't happen." ― Mikko Hypponen***
 
-## jSparrow 3.15.0 and jSparrow Maven Plugin 2.12.0 released
+## jSparrow 3.15.0 and jSparrow Maven Plugin 2.12.0 Released
 
 *Glad to see you, little bird;  
  'Twas your little chirp I heard:  
@@ -302,7 +347,7 @@ and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_2-12-0
 
 ***"Programs must be written for people to read, and only incidentally for machines to execute." ― Harold Abelson***
 
-## jSparrow 3.14.0 and jSparrow Maven Plugin 2.11.0 released
+## jSparrow 3.14.0 and jSparrow Maven Plugin 2.11.0 Released
 
 *With a break in the weather the sun shines through  
 The grass spangles with the morning dew  
@@ -319,7 +364,7 @@ Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.githu
 
 ***"Any fool can write code that a computer can understand. Good programmers write code that humans can understand." ― Martin Fowler***
 
-## jSparrow 3.13.0 and jSparrow Maven Plugin 2.10.0 released
+## jSparrow 3.13.0 and jSparrow Maven Plugin 2.10.0 Released
 
 *Little darling of the snow,  
 Careless how the winds may blow,  
@@ -336,7 +381,7 @@ Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.githu
 
 ***"Without requirements or design, programming is the art of adding bugs to an empty text file." ― Louis Srygley***
 
-## jSparrow 3.12.0 and jSparrow Maven Plugin 2.9.0 released
+## jSparrow 3.12.0 and jSparrow Maven Plugin 2.9.0 Released
 
 *I heard a bird sing  
 In the dark of December.  
@@ -352,7 +397,7 @@ Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.githu
 
 ***"Assignment statements are abstractions of destructive modifications of memory cells" ― Programming Language Concepts. Carlo Ghezzi, Mehdi Jazayeri***
 
-## jSparrow 3.11.0 and jSparrow Maven Plugin 2.8.0 released
+## jSparrow 3.11.0 and jSparrow Maven Plugin 2.8.0 Released
 
 *Glad to see you, little bird;  
 'Twas your little chirp I heard:  
@@ -370,7 +415,7 @@ Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.githu
 
 ***"Walking on water and developing software from a specification are easy if both are frozen." ― Edward V Berard***
 
-## New rule in jSparrow 3.10.0 and jSparrow Maven Plugin 2.7.0
+## New Rule in jSparrow 3.10.0 and jSparrow Maven Plugin 2.7.0
 
 *Against the black void, looms the lunar sphere.  
 Hungry bugs haunt, satisfied by fright.  
@@ -387,7 +432,7 @@ Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.githu
 
 ***"Real Programmers always confuse Christmas and Halloween because Oct31 == Dec25." ― Andrew Rutherford***
 
-## jSparrow 3.9.0 and jSparrow Maven Plugin 2.6.0 released!
+## jSparrow 3.9.0 and jSparrow Maven Plugin 2.6.0 Released!
 
 *His eyes with elf-like air did peer,  
 And cheekily, he flew down near;  
@@ -396,13 +441,13 @@ Since he removed code smells, code-base wide!*
 
 jSparrow introduces a new automatic refactoring rule that has the potential to greatly improve loop performance! Now there are [***65 automatic refactoring rules***](https://jsparrow.github.io/rules/) ready to be applied!
 
-### A new rule to improve performance!
+### A New Rule to Improve Performance!
 
 * [Insert Break Statements in For-loops](https://jsparrow.github.io/rules/insert-break-statement-in-loops.html) finds instances where Enhanced For-loops would benefit from an early stopping mechanism and adds `break` statements to avoid redundant loop cycles.  
 
 ***“Truth can only be found in one place: the code.” ― Robert C. Martin***
 
-## Two new rules in jSparrow 3.8.0 and jSparrow Maven Plugin 2.5.0!
+## Two New Rules in jSparrow 3.8.0 and jSparrow Maven Plugin 2.5.0!
 
 *A little bird, with plumage brown,  
 On top my codebase flutters down,  
@@ -411,7 +456,7 @@ Till, full on bugs, it flies away.*
 
 jSparrow has been busy studying new rules and is therefore happy to announce that he already knows $2^6$ rules! That's right, jSparrow supports [***64 automatic refactoring rules!***](https://jsparrow.github.io/rules/)
 
-### New rules to improve performance and readability!
+### New Rules to Improve Performance and Readability!
 
 * [Use Collections Singleton List](https://jsparrow.github.io/rules/use-collections-singleton-list.html) offers an efficient way to create empty or single-element lists. 
 * [Remove Null-Checks Before Instanceof](https://jsparrow.github.io/rules/remove-null-check-before-instanceof.html) recognizes redundant null-checks before `instanceof` and removes them. 
@@ -421,7 +466,7 @@ Find out more in the Release Notes for [jSparrow Eclipse](https://jsparrow.githu
 ***"The most important property of a program is whether it accomplishes the intention of its user.” ― C.A.R. Hoare***
 
 
-## jSparrow 3.7.0 and jSparrow Maven Plugin 2.4.0 released and are Lombok ready!
+## jSparrow 3.7.0 and jSparrow Maven Plugin 2.4.0 Released and Are Lombok Ready!
 
 *"I hope you love sparrows too. It is economical. It saves going to heaven."*
 
@@ -444,7 +489,7 @@ The new rule will have [Java 9](https://jsparrow.github.io/tags.html#Java_9), [L
 
 ***Stay tuned!***
 
-## jSparrow 3.6.0 and jSparrow Maven Plugin 2.3.0 released!
+## jSparrow 3.6.0 and jSparrow Maven Plugin 2.3.0 Released!
 
 *The earth is warm, the sun's ablaze, it is a time of bug-free days!*
 
@@ -475,13 +520,13 @@ Moreover, jSparrow 3.6.0 will be ready for [Eclipse 2019-06](https://www.eclipse
 
 ***Stay tuned!***
 
-## jSparrow 3.5.1 released!
+## jSparrow 3.5.1 Released!
 
 We have introduced a [Customer Portal](https://jsparrow.atlassian.net/servicedesk/customer/portal/1), where you can report bugs and get support. There is also a new email address for customer support: [support@jsparrow.eu](mailto:support@jsparrow.eu) 
 
 This release adds the link to our Customer Portal and the new email address to the help dialogs in jSparrow.
 
-## jSparrow 3.5.0 and jSparrow Maven Plugin 2.2.0 released!
+## jSparrow 3.5.0 and jSparrow Maven Plugin 2.2.0 Released!
 
 *The sparrows round their new nests chirp with glee as jSparrow is hatching a rule in the syntax tree!*
 
@@ -502,7 +547,7 @@ This release contains a new rule with the [Old Language Constructs](https://jspa
 
 ***Stay tuned for more information!***
 
-## jSparrow 3.4.0 and jSparrow Maven Plugin 2.1.0 released!
+## jSparrow 3.4.0 and jSparrow Maven Plugin 2.1.0 Released!
 
 Winter's days are past and it is time to start spring cleaning!
 
@@ -512,7 +557,7 @@ Find more information in our [jSparrow Eclipse](https://jsparrow.github.io/eclip
 
 ***"Make Simple Tasks Simple!" — Bjarne Stroustrup***
 
-## jSparrow Maven Plugin 2.0.0 released!
+## jSparrow Maven Plugin 2.0.0 Released!
 
 We are happy to announce the release of version 2.0.0 of the jSparrow Maven plugin!
 
@@ -521,7 +566,7 @@ Check out the [Release Notes](https://jsparrow.github.io/maven/release-notes.htm
 
 ***Improve code in your build pipeline with the jSparrow Maven plugin!***
 
-## jSparrow Maven Plugin 2.0.0 announcement!
+## jSparrow Maven Plugin 2.0.0 Announcement!
 
 On Thursday, March 28th, jSparrow Maven Plugin 2.0.0 will be released.
 This version is compatible with both Java 8 and Java 11.
@@ -529,7 +574,7 @@ Additionally, the jSparrow Maven Plugin 2.0.0 includes internal stability improv
 
 ***Stay IDE independent with the jSparrow Maven Plugin!***
 
-## jSparrow 3.3.0 released!!!
+## jSparrow 3.3.0 Released!!!
 
 jSparrow 3.3.0 is ready with new rules and supports Eclipse 2019-03! This brings jSparrow to a total number of [***56 automatic refactoring rules!***](https://jsparrow.github.io/rules/)
 
@@ -543,7 +588,7 @@ Have a look at the complete [Release Notes](https://jsparrow.github.io/eclipse/r
 
 ***Have fun saving time with jSparrow!***
 
-## New rules are coming in jSparrow 3.3.0!!!
+## New Rules Are Coming in jSparrow 3.3.0!!!
 
 We are happy to announce that we plan to release new rules with jSparrow 3.3.0!
 
@@ -553,7 +598,7 @@ The third rule will have the [Readability](https://jsparrow.github.io/tags.html#
 
 ***Stay tuned for more information!***
 
-## jSparrow 3.2.0 released!!!
+## jSparrow 3.2.0 Released!!!
 
 On Thursday, February 21, 2019, jSparrow 3.2.0 release arrived.
 This brings a new rule and a link to our documentation space from each rule in the select rules wizard.
@@ -562,7 +607,7 @@ We are also happy to announce that with this release jSparrow is ready for Java 
 
 For more information, check out our [Release Notes](https://jsparrow.github.io/eclipse/release-notes.html#_3-2-0).
 
-## jSparrow 3.1.0 released!!!
+## jSparrow 3.1.0 Released!!!
 
 jSparrow 3.1.0 has been thoroughly tested and is now ready for [Eclipse 2018-12](https://www.eclipse.org/downloads/packages/release/2018-12).
 Some additional UI improvements and bug fixes are also included in jSparrow 3.1.0.
@@ -576,7 +621,7 @@ Thank you for supporting jSparrow!
 
 ***Keep your code clean!***
 
-## jSparrow 3.1.0 announcement
+## jSparrow 3.1.0 Announcement
 
 On Tuesday, January 29th, jSparrow 3.1.0 will come with support for [Eclipse 2018-12](https://www.eclipse.org/downloads/packages/release/2018-12) and further UI improvements.
 Enjoy refactoring with jSparrow on the latest Eclipse version.
@@ -585,7 +630,7 @@ Don't forget to register for jSparrow Starter and get [***15 rules free of charg
 
 ***Happy Coding!***
 
-## jSparrow Starter released!!!
+## jSparrow Starter Released!!!
 Promised and kept - ***jSparrow Eclipse Starter*** is ***released***!
 
 With this new version of jSparrow you will be able to [apply 15 rules free of charge](https://jsparrow.github.io/rules/#free-rules-in-jsparrow-starter). After a short registration, you will get a license key, allowing you to apply the rules on your projects.
@@ -596,7 +641,7 @@ You can then decide if you want to use the *jSparrow Free* version, as usual, or
 
 Check out the [Release Notes](https://jsparrow.github.io/eclipse/release-notes.html#_3-0-0)!
 
-## jSparrow Starter is coming!!!
+## jSparrow Starter Is Coming!!!
 
 On ***December 21st 2018***, our solstice release, jSparrow surprises you with a new jSparrow Starter Version. Look forward to apply ***15 rules free of charge*** with jSparrow Eclipse 3.0.0!
 
