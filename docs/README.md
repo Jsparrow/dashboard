@@ -9,8 +9,9 @@ title: jSparrow
 ## jSparrow 3.23.0 and jSparrow Maven Plugin 3.0.0 Released
 
 We are excited to announce the major update of ***jSparrow Maven Plugin 3.0.0*** with our regular monthly release. 
-The key new feature in this update is the maven goal [`jsparrow:report`](https://jsparrow.github.io/maven/getting-started.html#report) that makes the jSparrow's static analysis capacity available to ***everyone***.
-Additional features are introduced to make jSparrow more customizable and more flexible for the users.
+The new key feature in this update is the Maven goal [`jsparrow:report`](https://jsparrow.github.io/maven/getting-started.html#report) that makes jSparrow's static analysis capabilities available to ***everyone***.
+More features are added to support **standard formatters** and to specify the sources to refactor using [glob expressions](ssh://git@bitbucket.splendit.loc:7999/jtp/maven-plugin-tests.git).
+The new updates make jSparrow more friendly to users who work with diverse IDEs or DevOps tools.
 
 ### [The jSparrow `report` Goal](https://jsparrow.github.io/maven/getting-started.html#report)
 
