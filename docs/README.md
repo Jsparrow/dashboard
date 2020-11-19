@@ -14,18 +14,18 @@ Additional features are introduced to make jSparrow more customizable and more f
 
 ### [The jSparrow `demo` Goal](https://jsparrow.github.io/maven/getting-started.html#demo)
 
-This maven plugin goal is introduced to allow users for trying the jSparrow Maven Plugin on their sources. 
-Similar to the [`refactor`](https://jsparrow.github.io/maven/getting-started.html#refactor) goal, the `demo` goal analyzes the project and computes refactorings with the selected rules.
+This maven plugin goal is introduced to allow users to try the jSparrow Maven plugin on their sources for free. 
+Similar to the [`refactor`](https://jsparrow.github.io/maven/getting-started.html#refactor) goal, the `demo` goal analyzes the project and computes refactorings with the selected rules.  
 As a result, jSparrow generates an HTML report with the computed findings. Similar reports are available in the statistics page (e.g., for [jenkins-core](https://jsparrow.github.io/statistics/jenkins-statistics.html?p=jenkins-core)).
 
 ### [The `formatter` Parameter](https://jsparrow.github.io/maven/additional-configuration.html#eclipse-formatter-file)
 
-A new parameter is added to the `refactor` goal, to allow users to specify a customized Eclipse formatter. 
-Any customized formatter can be exported from the Eclipse IDE and provided to `refactor` goal through the `formatter` parameter. 
+A new parameter is added to the `refactor` goal, to allow users to specify a customized Eclipse formatter.  
+Any customized formatter can be exported from the Eclipse IDE and provided to the `refactor` goal through the `formatter` parameter. 
 
 ### [The `selectedSources` Parameter](https://jsparrow.github.io/maven/getting-started.html#refactor)
 
-A new parameter is added to the `refactor` goal to allow users for specifying the sources that jSparrow shall refactor.
+A new parameter is added to the `refactor` goal to allow users to specify sources that jSparrow shall consider for refactorings.
 [Glob expressions](https://docs.oracle.com/javase/tutorial/essential/io/fileOps.html#glob) can be used for specifying the selected sources. 
 
 
@@ -47,7 +47,8 @@ This brings jSparrow to a total of [***87 automatic refactoring rules***](https:
 Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-23-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3.0.0)!
 
 
-***"Programs must be written for people to read, and only incidentally for machines to execute." ― Harold Abelson***
+***"Programs must be written for people to read, and only incidentally for machines to execute."***  
+***― Harold Abelson***
 
 ## jSparrow 3.22.0 and jSparrow Maven Plugin 2.19.0 released
 
