@@ -9,13 +9,13 @@ title: jSparrow
 ## jSparrow 3.23.0 and jSparrow Maven Plugin 3.0.0 released
 
 We are excited to announce the major update of ***jSparrow Maven Plugin 3.0.0*** with our regular monthly release. 
-The key new feature in this update is the maven goal [`jsparrow:demo`](https://jsparrow.github.io/maven/getting-started.html#demo) that makes the jSparrow's static analysis capacity available to ***everyone***.
+The key new feature in this update is the maven goal [`jsparrow:report`](https://jsparrow.github.io/maven/getting-started.html#report) that makes the jSparrow's static analysis capacity available to ***everyone***.
 Additional features are introduced to make jSparrow more customizable and more flexible for the users.
 
-### [The jSparrow `demo` Goal](https://jsparrow.github.io/maven/getting-started.html#demo)
+### [The jSparrow `report` Goal](https://jsparrow.github.io/maven/getting-started.html#report)
 
-This maven plugin goal is introduced to allow users to try the jSparrow Maven plugin on their sources for free. 
-Similar to the [`refactor`](https://jsparrow.github.io/maven/getting-started.html#refactor) goal, the `demo` goal analyzes the project and computes refactorings with the selected rules.  
+This Maven plugin goal is introduced to allow users to try the jSparrow Maven plugin on their sources for free. 
+Similar to the [`refactor`](https://jsparrow.github.io/maven/getting-started.html#refactor) goal, the `report` goal analyzes the project and computes refactorings with the selected rules.  
 As a result, jSparrow generates an HTML report with the computed findings. Similar reports are available in the statistics page (e.g., for [jenkins-core](https://jsparrow.github.io/statistics/jenkins-statistics.html?p=jenkins-core)).
 
 ### [The `formatter` Parameter](https://jsparrow.github.io/maven/additional-configuration.html#eclipse-formatter-file)
