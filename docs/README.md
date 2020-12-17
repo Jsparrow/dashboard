@@ -9,7 +9,7 @@ title: jSparrow
 
 ## jSparrow 3.24.0 and jSparrow Maven Plugin 3.1.0 Released
 
-The midwinter jSparrow release adds three new refactoring rules and opens a new chapter in refactoring towards JUnit 5. 
+The winter solstice jSparrow release adds three new refactoring rules and opens a new chapter in refactoring towards JUnit 5. 
 
 ### [Replace JUnit ExpectedException with assertThrows](https://jsparrow.github.io/rules/replace-j-unit-expected-exception.html)
 In JUnit 4.13, the [`ExpectedException.none()`](https://junit.org/junit4/javadoc/latest/org/junit/rules/ExpectedException.html#none()) rule is deprecated.
