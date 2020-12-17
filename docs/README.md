@@ -6,6 +6,93 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+
+## jSparrow 3.24.0 and jSparrow Maven Plugin 3.1.0 Released
+
+The winter solstice jSparrow release adds three new refactoring rules and opens a new chapter in refactoring towards JUnit 5. 
+
+### [Replace JUnit ExpectedException with assertThrows](https://jsparrow.github.io/rules/replace-j-unit-expected-exception.html)
+In JUnit 4.13, the [`ExpectedException.none()`](https://junit.org/junit4/javadoc/latest/org/junit/rules/ExpectedException.html#none()) rule is deprecated.
+The recommended alternative is to use [`assertThrows()`](https://junit.org/junit4/javadoc/latest/org/junit/Assert.html#assertThrows(java.lang.Class,%20org.junit.function.ThrowingRunnable)). 
+This new jSparrow rule performs such a transformation automatically. 
+
+__Pre__
+```java
+@Rule
+public ExpectedException expectedException = ExpectedException.none();
+
+@Test
+public void invalidRepo_shouldThrowPersistenceException() throws PersistenceException {
+	User user = new User("10", "John", "wolf");
+	expectedException.expect(PersistenceException.class);
+	invalidUserRepository.save(user);
+}
+```
+
+__Post__
+```java
+@Test
+public void invalidRepo_shouldThrowPersistenceException() {
+	User user = new User("10", "John", "wolf");
+	assertThrows(PersistenceException.class, () -> invalidUserRepository.save(user));
+}
+```
+
+### [Replace JUnit Expected Annotation Property with assertThrows](https://jsparrow.github.io/rules/replace-j-unit-expected-annotation-property.html)
+
+Using the [`expected`](https://junit.org/junit4/javadoc/latest/org/junit/Test.html#expected()) annotation property for testing the thrown exceptions is rather misleading. 
+Often it becomes unclear which part of the test code is responsible for throwing the exception. 
+This rule aims to overcome this problem by replacing the `expected` annotation property with [`assertThrows`](https://junit.org/junit4/javadoc/latest/org/junit/Assert.html#assertThrows(java.lang.Class,%20org.junit.function.ThrowingRunnable)).
+
+__Pre__
+```java
+@Test(expected = PersistenceException.class)
+public void invalidRepo_shouldThrowPersistenceException() throws PersistenceException {
+    User user = new User("10", "John", "wolf");
+    invalidUserRepository.save(user);
+}
+```
+
+__Post__
+```java
+@Test
+public void invalidRepo_shouldThrowPersistenceException() {
+    User user = new User("10", "John", "wolf");
+    assertThrows(PersistenceException.class, () -> invalidUserRepository.save(user));
+}
+```
+
+### [Use Files.writeString](https://jsparrow.github.io/rules/use-files-write-string.html)
+
+Java 11 introduced [`Files.writeString(Path, CharSequence, Charset, OpenOption...)`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#writeString(java.nio.file.Path,java.lang.CharSequence,java.nio.charset.Charset,java.nio.file.OpenOption...)) for writing small text files in an efficient manner. 
+This rule replaces `BufferedWriter`s that are used to write a single value into a file, with `Files.write(...)`.
+
+__Pre__
+```java
+try (BufferedWriter bufferedWriter = new BufferedWriter(
+    new FileWriter(path, StandardCharsets.UTF_8))) {
+  bufferedWriter.write("Hello World!");
+} catch (IOException ioException) {
+  logError("File could not be written.", ioException);
+}
+```
+
+__Post__
+```java
+try {
+  Files.writeString(Paths.get(path), "Hello World!", StandardCharsets.UTF_8);
+} catch (IOException ioException) {
+  logError("File could not be written.", ioException);
+}
+```
+---
+
+jSparrow provides now a total of [***90 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-24-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3-1-0)!
+
+***"First do it, then do it right, then do it better." ― Addy Osmani***
+
 ## jSparrow 3.23.0 and jSparrow Maven Plugin 3.0.0 Released
 
 We are excited to announce the major update of ***jSparrow Maven Plugin 3.0.0*** with our regular monthly release. 
