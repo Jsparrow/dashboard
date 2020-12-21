@@ -16,7 +16,7 @@ jSparrow has a Christmas present for you! **Five** more rules are added for **fr
 * [Use SecureRandom](https://jsparrow.github.io/rules/use-secure-random.html)
 * [Use Offset Based String Methods](https://jsparrow.github.io/rules/use-offset-based-string-methods.html)
 
-[Register now](https://jsparrow.github.io/rules/#free-rules-in-jsparrow-starter) and get [**20 rules**](https://jsparrow.github.io/tags/#free) for **Free** of charge in *jSparrow Starter*. 
+[Register now](https://jsparrow.github.io/rules/#free-rules-in-jsparrow-starter) and get [**20 rules**](https://jsparrow.github.io/tags/#free) **Free** of charge in *jSparrow Starter*. 
 
 ***"Merry Christmas and Happy New Year!" ― Your jSparrow Team***
 
