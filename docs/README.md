@@ -6,6 +6,19 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.25.0 Released
+
+jSparrow has a Christmas present for you! **Five** more rules are added for **free** in jSparrow Starter:
+
+* [Remove Null-Checks Before Instanceof](https://jsparrow.github.io/rules/remove-null-check-before-instanceof.html)
+* [Use Optional::filter](https://jsparrow.github.io/rules/optional-filter.html)
+* [Collapse If Statements](https://jsparrow.github.io/rules/collapse-if-statements.html)
+* [Use SecureRandom](https://jsparrow.github.io/rules/use-secure-random.html)
+* [Use Offset Based String Methods](https://jsparrow.github.io/rules/use-offset-based-string-methods.html)
+
+[Register now](https://jsparrow.github.io/rules/#free-rules-in-jsparrow-starter) and get [**20 rules**](https://jsparrow.github.io/tags/#free) for **Free** of charge in *jSparrow Starter*. 
+
+***"Merry Christmas and Happy New Year!" ― Your jSparrow Team***
 
 ## jSparrow 3.24.0 and jSparrow Maven Plugin 3.1.0 Released
 
