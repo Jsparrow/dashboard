@@ -8,7 +8,7 @@ title: jSparrow
 
 ## jSparrow 3.26.0 and jSparrow Maven Plugin 3.2.0 Released
 
-jSparrow introduces a new rule for optimizing the I/O operations on text files. 
+jSparrow adds a new rule to help migrating to JUnit 5. 
 
 ### [Replace JUnit Timeout Annotation Property with assertTimeout](https://jsparrow.github.io/rules/replace-j-unit-timeout-annotation-property.html)
 
