@@ -6,6 +6,41 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.26.0 and jSparrow Maven Plugin 3.2.0 Released
+
+jSparrow adds a new rule to help migrating to JUnit 5. 
+
+### [Replace JUnit Timeout Annotation Property with assertTimeout](https://jsparrow.github.io/rules/replace-j-unit-timeout-annotation-property.html)
+
+The JUnit [Jupiter API](https://junit.org/junit5/docs/current/user-guide/#overview) provides timeout assertions, i.e., assertions that make sure an executable completes before a timeout is exceeded.  
+In JUnit 4 this is achieved by using annotation properties, e.g., `@Test(timeout=...)`.
+
+This rule removes the `timeout` annotation property and inserts an  [`assertTimeout`](https://junit.org/junit5/docs/5.0.1/api/org/junit/jupiter/api/Assertions.html#assertTimeout-java.time.Duration-org.junit.jupiter.api.function.Executable-) instead.
+For example, the following test case:
+
+```java
+@Test(timeout=100)
+public void timeoutTest() throws PersistenceException {
+	userRepository.save(new User("10", "Jay", "Sparrow"));
+}
+```
+
+is refactored to:
+
+```java
+@Test
+public void timeoutTest() throws PersistenceException {
+	assertTimeout(ofMillis(100), () -> userRepository.save(new User("10", "Jay", "Sparrow")));
+}
+```
+
+This brings jSparrow to a total of [***91 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-26-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3-2-0)!
+
+
+***"With good program architecture debugging is a breeze, because bugs will be where they should be." ― David May***
+
 ## jSparrow 3.25.0 Released
 
 jSparrow has a Christmas present for you! **Five** more rules are added for **free** in jSparrow Starter:
