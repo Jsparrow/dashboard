@@ -12,26 +12,9 @@ This new jSparrow release brings further assistance in migrating to JUnit 5!
 
 ### [Replace JUnit 4 Annotations with JUnit Jupiter](https://jsparrow.github.io/rules/replace-j-unit4-annotations-with-jupiter.html)
 
-In JUnit Jupiter, annotations reside in [`org.junit.jupiter.api`](https://junit.org/junit5/docs/5.0.1/api/org/junit/jupiter/api/package-summary.html), while in JUnit 4 annotations reside in [`org.junit`](https://junit.org/junit4/javadoc/latest/).
-This rule, replaces the following JUnit 4 annotations:
-* [@Test](https://junit.org/junit4/javadoc/latest/org/junit/Test.html)
-* [@Ignore](https://junit.org/junit4/javadoc/latest/org/junit/Ignore.html)
-* [@Before](https://junit.org/junit4/javadoc/latest/org/junit/Before.html)
-* [@BeforeClass](https://junit.org/junit4/javadoc/latest/org/junit/BeforeClass.html)
-* [@After](https://junit.org/junit4/javadoc/latest/org/junit/After.html)
-* [@AfterClass](https://junit.org/junit4/javadoc/latest/org/junit/AfterClass.html)
-
-respectively with the JUnit [Jupiter API](https://junit.org/junit5/docs/current/user-guide/#overview) alternatives: 
-
-* [@Test](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Test.html)
-* [@Disable](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Disabled.html)
-* [@BeforeEach](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/BeforeEach.html)
-* [@BeforeAll](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/BeforeAll.html)
-* [@AfterEach](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/AfterEach.html)
-* [@AfterAll](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/AfterAll.html)
-
-By replacing each of these JUnit 4 annotations by the corresponding Jupiter alternatives, this rule promotes a stepwise transition to JUnit Jupiter.
-Here a short example:
+By replacing the JUnit 4 annotations with the corresponding [Jupiter](https://junit.org/junit5/docs/current/user-guide/#overview) alternatives, this rule promotes an automated transition to JUnit Jupiter.
+For more details, visit our [online documentation](https://jsparrow.github.io/rules/replace-j-unit4-annotations-with-jupiter.html).
+Here is a short example:
 
 __Pre__
 ```java
@@ -42,15 +25,11 @@ import org.junit.Test;
 public class ExampleTest {
 
 	@Before
-	public void beforeTestMethod() {
-		// ..
-	}
+	public void beforeTestMethod() {}
 
 	@Ignore
 	@Test
-	public void test() {
-		// ..
-	}
+	public void test() {}
 }
 ```
 
@@ -63,15 +42,11 @@ import org.junit.jupiter.api.Test;
 public class ExampleTest {
 
 	@BeforeEach
-	public void beforeTestMethod() {
-		// ..
-	}
+	public void beforeTestMethod() {}
 
 	@Disabled
 	@Test
-	public void test() {
-		// ..
-	}
+	public void test() {}
 }
 ```
 
