@@ -6,6 +6,57 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.27.0 and jSparrow Maven Plugin 3.3.0 Released
+
+This new jSparrow release brings further assistance in migrating to JUnit 5!
+
+### [Replace JUnit 4 Annotations with JUnit Jupiter](https://jsparrow.github.io/rules/replace-j-unit4-annotations-with-jupiter.html)
+
+By replacing the JUnit 4 annotations with the corresponding [Jupiter](https://junit.org/junit5/docs/current/user-guide/#overview) alternatives, this rule promotes an automated transition to JUnit Jupiter.
+For more details, visit our [online documentation](https://jsparrow.github.io/rules/replace-j-unit4-annotations-with-jupiter.html).
+Here is a short example:
+
+__Pre__
+```java
+import org.junit.Before;
+import org.junit.Ignore;
+import org.junit.Test;
+
+public class ExampleTest {
+
+	@Before
+	public void beforeTestMethod() {}
+
+	@Ignore
+	@Test
+	public void test() {}
+}
+```
+
+__Post__
+```java
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+
+public class ExampleTest {
+
+	@BeforeEach
+	public void beforeTestMethod() {}
+
+	@Disabled
+	@Test
+	public void test() {}
+}
+```
+
+This new rule brings jSparrow to a total of [***92 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-27-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3-3-0)!
+
+
+***"Never allow the same bug to bite you twice." ― Steve Maguire***
+
 ## jSparrow 3.26.0 and jSparrow Maven Plugin 3.2.0 Released
 
 jSparrow adds a new rule to help migrating to JUnit 5. 
