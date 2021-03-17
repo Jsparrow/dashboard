@@ -6,6 +6,65 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.28.0 and jSparrow Maven Plugin 3.4.0 Released
+
+This new jSparrow release brings the final step on transitioning to JUnit 5!
+
+### [Replace JUnit 4 Assertions with JUnit Jupiter](https://jsparrow.github.io/rules/replace-j-unit4-assertions-with-jupiter.html)
+
+This rule contributes to a stepwise transition to JUnit 5 by replacing the JUnit 4 assertion methods by the equivalent JUnit 5 ones.
+For more details, visit our [online documentation](https://jsparrow.github.io/rules/replace-j-unit4-assertions-with-jupiter.html).
+Here is a short example:
+
+The following test class:
+```java
+import static org.junit.Assert.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class UserRepoTest {
+	private UserRepository userRepo;
+	@BeforeEach
+	public void init() {
+		userRepo = new UserRepository();
+	}
+
+	@Test
+	void test() {
+		User user = userRepo.findById("0");
+		assertEquals("John is always first", "John", user.getName());
+	}
+}
+```
+
+is transformed to:
+```java
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class UserRepoTest {
+	private UserRepository userRepo;
+	@BeforeEach
+	public void init() {
+		userRepo = new UserRepository();
+	}
+
+	@Test
+	void test() {
+		User user = userRepo.findById("0");
+		assertEquals("John", user.getName(), "John is always first.");
+	}
+}
+```
+
+This new rule brings jSparrow to a total of [***93 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-28-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3-4-0)!
+
+
+***"The only way to go fast, is to go well." ― Robert C. Martin***
+
 ## jSparrow 3.27.0 and jSparrow Maven Plugin 3.3.0 Released
 
 This new jSparrow release brings further assistance in migrating to JUnit 5!
