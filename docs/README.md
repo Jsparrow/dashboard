@@ -6,6 +6,56 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.29.0 and jSparrow Maven Plugin 3.5.0 Released
+
+This new jSparrow release eliminates some obstacles for migrating to JUnit 5!
+
+### [Replace JUnit assertThat with Hamcrest](https://jsparrow.github.io/rules/replace-j-unit-assert-that-with-hamcrest.html)
+
+The JUnit [`Assert.assertThat`](https://junit.org/junit4/javadoc/4.13/org/junit/Assert.html#assertThat(T,%20org.hamcrest.Matcher)) method is deprecated. Its sole purpose is to forward the call to the [`MatcherAssert.assertThat`](http://hamcrest.org/JavaHamcrest/javadoc/1.3/org/hamcrest/MatcherAssert.html#assertThat(T,%20org.hamcrest.Matcher)) defined in Hamcrest 1.3. 
+Therefore, it is recommended to directly use the equivalent assertion defined in the third party Hamcrest library.  
+Since JUnit 5 contains no equivalent assertion for `assertThat`, this rule also eliminates an obstacle for migration to JUnit 5. 
+Here is a short transformation example of the new rule:
+
+The following test class:
+```java
+import static org.junit.Assert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
+
+import org.junit.Test;
+
+public class UserRepositoryTest {
+	@Test
+	public void replacingAssertThat() {
+        User user = userRepo.findById("0");
+		assertThat(user, equalTo(new User("Robb", "Stark")));
+	}
+}
+```
+
+is transformed to:
+```java
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
+
+import org.junit.Test;
+
+public class UserRepositoryTest {
+	@Test
+	public void replacingAssertThat() {
+        User user = userRepo.findById("0");
+		assertThat(user, equalTo(new User("Robb", "Stark")));
+	}
+}
+```
+
+This new rule brings jSparrow to a total of [***94 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-29-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3-5-0)!
+
+
+***"Code teaches you how to face really big problems." ― Jack Dorsey***
+
 ## jSparrow 3.28.0 and jSparrow Maven Plugin 3.4.0 Released
 
 This new jSparrow release brings the final step on transitioning to JUnit 5!
