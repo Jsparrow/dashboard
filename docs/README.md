@@ -27,7 +27,7 @@ import org.junit.Test;
 public class UserRepositoryTest {
 	@Test
 	public void replacingAssertThat() {
-        User user = userRepo.findById("0");
+		User user = userRepo.findById("0");
 		assertThat(user, equalTo(new User("Robb", "Stark")));
 	}
 }
@@ -43,7 +43,7 @@ import org.junit.Test;
 public class UserRepositoryTest {
 	@Test
 	public void replacingAssertThat() {
-        User user = userRepo.findById("0");
+		User user = userRepo.findById("0");
 		assertThat(user, equalTo(new User("Robb", "Stark")));
 	}
 }
