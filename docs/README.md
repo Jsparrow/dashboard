@@ -6,6 +6,53 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 3.30.0 and jSparrow Maven Plugin 3.6.0 Released
+
+This new jSparrow release brings more assistance on transitioning to JUnit 5!
+
+### [Replace JUnit 4 Assumptions with JUnit Jupiter](https://jsparrow.github.io/rules/replace-j-unit4-assumptions-with-jupiter.html)
+
+This rule contributes to a stepwise transition to JUnit 5 by replacing the JUnit 4 assumption methods (namely, `assumeTrue` and `assumeFalse`) by the equivalent JUnit 5 ones.
+Here is a short transformation example of the new rule:
+
+The following test:
+```java
+import static org.junit.Assume.assumeTrue;
+//...
+class OrderTest {
+	//...
+	@Test
+	void testService() {
+		assumeTrue(orderService.isAvailableInStock("1", 5));
+		Order order = orderService.book("1", 5, "user-id");
+		assertNotNull(order);
+	}
+}
+```
+
+is transformed to:
+```java
+import static org.junit.jupiter.api.Assumptions.assumeTrue;
+//...
+class OrderTest {
+	//...
+	@Test
+	void testService() {
+		assumeTrue(orderService.isAvailableInStock("1", 5));
+		Order order = orderService.book("1", 5, "user-id");
+		assertNotNull(order);
+	}
+}
+```
+
+This new rule brings jSparrow to a total of [***95 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-30-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3-6-0)!
+
+
+***"Everyday life is like programming, I guess. If you love something you can put beauty into it." ― Donald Knuth***
+
+
 ## jSparrow 3.29.0 and jSparrow Maven Plugin 3.5.0 Released
 
 This new jSparrow release eliminates some obstacles for migrating to JUnit 5!
