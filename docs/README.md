@@ -6,6 +6,43 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 4.0.0 and jSparrow Maven Plugin 3.7.0 Released
+
+We are excited to announce the midsummer release comes with a major update to jSparrow 4.0.0.
+The key features in this release are the jSparrow Markers. 
+Additionally, 3 more rules for refactoring JUnit tests are added to the jSparrow rule set, thus increasing the total number of refactoring rules to 98. 
+
+### jSparrow Markers. 
+
+For the first time, we introduce jSparrow Markers to help developers mitigate issues and code smells in real time, while writing new code. 
+
+![jSparrow Markers](/dashboard/img/jSparrowMarkers_016.gif)
+
+The markers for the first 10 jSparrow Rules are available to everyone. 
+More markers for more rules are about to come. 
+
+### [Rule Name ](https://jsparrow.github.io/rules/replace-j-unit4-assumptions-with-jupiter.html)
+
+This rule contributes to a stepwise transition to JUnit 5 by replacing the JUnit 4 assumption methods (namely, `assumeTrue` and `assumeFalse`) by the equivalent JUnit 5 ones.
+Here is a short transformation example of the new rule:
+
+The following test:
+```java
+
+```
+
+is transformed to:
+```java
+
+```
+
+The new rules bring jSparrow to a total of [***98 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_4-0-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3-7-0)!
+
+
+***"Quote Here." ― Author Here***
+
 ## jSparrow 3.30.0 and jSparrow Maven Plugin 3.6.0 Released
 
 This new jSparrow release brings more assistance on transitioning to JUnit 5!
