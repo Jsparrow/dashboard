@@ -96,7 +96,7 @@ The new rules bring jSparrow to a total of [***98 automatic refactoring rules***
 Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_4-0-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3-7-0)!
 
 
-***"Quote Here." ― Author Here***
+***"The function of a good software is to make the complex appear to be simple." ― Grady Booch***
 
 ## jSparrow 3.30.0 and jSparrow Maven Plugin 3.6.0 Released
 
