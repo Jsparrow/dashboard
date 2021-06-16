@@ -16,7 +16,7 @@ Additionally, 3 more rules for refactoring JUnit tests are added to the jSparrow
 
 For the first time, we introduce **jSparrow Markers** to help developers mitigate issues and code smells in real time, while writing new code. 
 
-![jSparrow Markers](/dashboard/img/jSparrowMarkers_016.gif)
+![jSparrow Markers](/dashboard/img/jSparrowMarker.gif)
 
 The markers for the first 10 jSparrow Rules are available to everyone. 
 More markers for more rules are about to come. 
