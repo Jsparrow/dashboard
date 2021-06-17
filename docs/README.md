@@ -8,7 +8,7 @@ title: jSparrow
 
 ## jSparrow 4.0.0 and jSparrow Maven Plugin 3.7.0 Released
 
-We are excited to announce that this midsummer release comes with a major update to **jSparrow 4.0.0**.
+We are excited to announce that this midsummer release brings a major update to **jSparrow 4.0.0**.
 The key new feature in this release is the **jSparrow Marker**. 
 Additionally, 3 more rules for refactoring JUnit tests are added to the jSparrow rule set, thus reaching a total of **98 rules**.
 
