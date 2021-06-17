@@ -6,6 +6,98 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 4.0.0 and jSparrow Maven Plugin 3.7.0 Released
+
+We are excited to announce that this midsummer release brings a major update to **jSparrow 4.0.0**.
+The key new feature in this release is the **jSparrow Marker**. 
+Additionally, 3 more rules for refactoring JUnit tests are added to the jSparrow rule set, thus reaching a total of **98 rules**.
+
+### jSparrow Markers. 
+
+For the first time, we introduce **jSparrow Markers** to help developers mitigate issues and code smells in real-time, while writing new code. 
+
+![jSparrow Markers](/dashboard/img/jSparrowMarker.gif)
+
+The markers for the first 10 jSparrow Rules are available to everyone. 
+More markers for more rules are about to come. 
+
+### [Use Dedicated Assertions](https://jsparrow.github.io/rules/use-dedicated-assertions.html)
+
+Replaces boolean assertions (e.g., `assertTrue` and `assertFalse`) with the corresponding dedicated assertions when testing for equality or **null** values. 
+Thus, improving the assertion failure messages and the readability of the test code. 
+It supports both, JUnit 4 and JUnit Jupiter assertions.  
+
+The following assertion:
+```java
+assertTrue(expected.equals(actual));
+```
+
+is transformed to:
+```java
+assertEquals(expected, actual);
+```
+
+### [Replace JUnit Assumptions with Hamcrest JUnit](https://jsparrow.github.io/rules/replace-j-unit4-assumptions-with-hamcrest-j-unit.html)
+
+This rule replaces the JUnit 4 assumptions [`assumeThat`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeThat(java.lang.String,%20T,%20org.hamcrest.Matcher)), [`assumeNoException`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeNoException(java.lang.String,%20java.lang.Throwable)), and [`assumeNotNull`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeNotNull(java.lang.Object...)) by the equivalent invocations of Hamcrest JUnit assumption [`MatcherAssume.assumeThat`](https://www.javadoc.io/doc/org.hamcrest/hamcrest-junit/1.0.0.0/org/hamcrest/junit/MatcherAssume.html#assumeThat(java.lang.String,%20T,%20org.hamcrest.Matcher)). 
+
+Since JUnit 5 contains no equivalent assumption methods, this rule eliminates an obstacle when migrating to JUnit 5. 
+
+The following test:
+```java
+import static org.hamcrest.Matchers.equalToIgnoringCase;
+import static org.junit.Assume.assumeThat;
+//..
+	@Test
+	public void test() {
+		//...
+		assumeThat(value, equalToIgnoringCase("value"));
+	}
+```
+
+is transformed to:
+```java
+import static org.hamcrest.Matchers.equalToIgnoringCase;
+import static org.hamcrest.junit.MatcherAssume.assumeThat;
+//..
+	@Test
+	public void test() {
+		//...
+		assumeThat(value, equalToIgnoringCase("value"));
+	}
+```
+
+### [Replace JUnit 4 Category with JUnit Jupiter Tag](https://jsparrow.github.io/rules/replace-j-unit4-category-with-jupiter-tag.html)
+
+This rule replaces JUnit 4 [@Category](https://junit.org/junit4/javadoc/latest/org/junit/experimental/categories/Category.html) annotations with one or more JUnit Jupiter [@Tag](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Tag.html) annotations. 
+This replacement is a further step toward transitioning to JUnit Jupiter.
+
+The following test:
+```java
+@Category({ FirstCategory.class, SecondCategory.class })
+@Test
+public void test() {
+	// ...
+}
+```
+
+is transformed to:
+```java
+@Tag("io.jsparrow.examples.FirstCategory")
+@Tag("io.jsparrow.examples.SecondCategory")
+@Test
+public void test() {
+	// ...
+}
+```
+
+The new rules bring jSparrow to a total of [***98 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_4-0-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3-7-0)!
+
+
+***"The function of a good software is to make the complex appear to be simple." ― Grady Booch***
+
 ## jSparrow 3.30.0 and jSparrow Maven Plugin 3.6.0 Released
 
 This new jSparrow release brings more assistance on transitioning to JUnit 5!
