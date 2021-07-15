@@ -6,6 +6,68 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+
+## jSparrow 4.1.0 and jSparrow Maven Plugin 3.8.0 Released
+
+This new jSparrow release brings more assistance on migrating JUnit 3 Tests. 
+
+### [Replace JUnit 3 Test Cases](https://jsparrow.github.io/rules/replace-j-unit3-test-cases.html)
+
+This rule migrates JUnit 3 tests to either JUnit JUpiter or JUnit 4 depending on the most up-to-date JUnit version available in the classpath. 
+
+The following test:
+```java
+import junit.textui.TestRunner;
+import junit.framework.TestCase;
+
+public class CalculatorTest extends TestCase {
+
+	private Calculator calculator;
+
+	@Override
+	protected void setUp() {
+		calculator = new Calculator();
+	}
+
+	public void testAddition() {
+		assertEquals(0x7fffffff, calculator.add(Integer.MAX_VALUE, 0));
+	}
+
+	public static void main(String[] args) {
+		TestRunner.run(ReplaceJUnit3TestCasesWithJupiterRule.class);
+	}
+}
+```
+
+is transformed to:
+```java
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
+
+public class CalculatorTest {
+
+	private Calculator calculator;
+
+	@BeforeEach
+	protected void setUp() {
+		calculator = new Calculator();
+	}
+
+	@Test
+	public void testAddition() {
+		assertEquals(0x7fffffff, calculator.add(Integer.MAX_VALUE, 0));
+	}
+}
+```
+
+This new rule brings jSparrow to a total of [***99 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_4-1-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3-8-0)!
+
+
+***"The unavoidable price of reliability is simplicity." ― C.A.R. Hoare***
+
 ## jSparrow 4.0.0 and jSparrow Maven Plugin 3.7.0 Released
 
 We are excited to announce that this midsummer release brings a major update to **jSparrow 4.0.0**.
