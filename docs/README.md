@@ -7,6 +7,40 @@ title: jSparrow
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
 
+## jSparrow 4.2.0 Released
+
+This new jSparrow release supports upgrading to Java 16.
+
+### [Use Pattern Matching for Instanceof](https://jsparrow.github.io/rules/use-pattern-matching-for-instanceof.html)
+
+This rule replaces instanceof expressions by [Pattern Matching for instanceof](https://openjdk.java.net/jeps/394) introduced in Java 16. 
+
+It is common for Java programs to contain logic that combines type checking using `instanceof` with explicit type casting. 
+Naturally, an `instanceof` expression is followed by a local variable declaration initialized with a casting expression. 
+Pattern Matching for instanceof combines these three steps (i.e., type checking, variable declaration, and type casting) into a single step, thus reducing boilerplate code and eliminating sources of errors. 
+
+The following code:
+```java
+if(athlete instanceof Swimmer) {
+    Swimmer swimmer = (Swimmer)athlete;		
+    sendGoldMedal(swimmer);
+}
+```
+
+is transformed to:
+```java
+if(athlete instanceof Swimmer swimmer) {	
+    sendGoldMedal(swimmer);
+}
+```
+
+This new rule brings jSparrow to a total of [***100 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_4-2-0)!
+
+
+***"Brevity is the soul of wit." ― William Shakespeare.***
+
 ## jSparrow 4.1.0 and jSparrow Maven Plugin 3.8.0 Released
 
 This new jSparrow release brings more assistance on migrating JUnit 3 Tests. 
