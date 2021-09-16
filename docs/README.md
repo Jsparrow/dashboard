@@ -7,6 +7,106 @@ title: jSparrow
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
 
+## jSparrow 4.3.0 and jSparrow Maven Plugin 3.10.0 Released
+
+We are excited to announce that this autumn release brings three additional jSparrow rules!
+The new rules embrace some recent Java features like Switch Expressions and Text Blocks. 
+
+### [Use Switch Expression](https://jsparrow.github.io/rules/use-switch-expression.html)
+
+This rule replaces the traditional switch statements with switch expressions which turned into a standard feature in Java 14.
+
+For instance, the following code:
+```java
+String medal;
+switch(finished) {
+case 1 : 
+    medal = "Gold";
+    break;
+case 2: 
+    medal = "Silver";
+    break;
+case 3: 
+    medal = "Bronze";
+    break;
+default:
+    medal = "None";
+}
+```
+
+is transformed to:
+```java
+String medal = switch (finished) {
+    case 1 -> "Gold";
+    case 2 -> "Silver";
+    case 3 -> "Bronze";
+    default -> "None";
+```
+
+### [Use Text Block](https://jsparrow.github.io/rules/use-text-block.html)
+
+Java 15 introduced [Text Blocks](https://openjdk.java.net/jeps/378) to express String literals spanning several lines. 
+This rule replaces multiline String concatenation expressions with Text Block String literals. 
+
+For instance, the following string concatenation:
+```java
+String html = "" +
+		"<html>\n" +
+		"\t<head>\n" +
+		"\t\t<meta charset=\"utf-8\">" +
+		"\t</head>\n" +
+		"\t<body class=\"default-view\" style=\"word-wrap: break-word;\">\n"+ 
+		"\t\t<p>Hello, world</p>\n" + 
+		"\t</body>\n"+
+		"</html>\n";
+```
+
+is transformed to:
+```java
+String html = """
+		<html>
+			<head>
+				<meta charset="utf-8">
+			</head>
+			<body class="default-view" style="word-wrap: break-word;">
+				<p>Hello, world</p>
+			</body>
+		</html>
+		""";
+```
+
+### [Replace String Format by Formatted](https://jsparrow.github.io/rules/replace-string-format-by-formatted.html)
+
+This rule replaces the static invocations of [`String.format`](https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/String.html#format(java.lang.String,java.lang.Object...)) by invocations of the new instance method [`String::formatted​`](https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/String.html#formatted(java.lang.Object...)) from Java 15.
+
+For instance, the following text block:
+```java
+String output = String.format("""
+		Name:    %s
+		Phone:   %s
+		Address: %s
+		Salary:  $%.2f
+		""", 
+        name, phone, address, salary);
+```
+
+can be formatted as follows:
+```java
+String output = """
+		Name:    %s
+		Phone:   %s
+		Address: %s
+		Salary:  $%.2f
+		""".formatted(name, phone, address, salary);
+```
+
+These three new rules bring jSparrow to a total of [***103 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_4-3-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3-10-0)!
+
+
+***"The art of programming is the art of organizing complexity." ― Edsger Dijkstra***
+
 ## jSparrow 4.2.0 Released
 
 This new jSparrow release supports upgrading to Java 16.
