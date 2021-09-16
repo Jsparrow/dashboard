@@ -14,7 +14,7 @@ The new rules embrace some recent Java features like Switch Expressions and Text
 
 ### [Use Switch Expression](https://jsparrow.github.io/rules/use-switch-expression.html)
 
-This rule replaces the traditional switch statements with switch expressions which turned to standard feature in Java 14.
+This rule replaces the traditional switch statements with switch expressions which turned into a standard feature in Java 14.
 
 For instance, the following code:
 ```java
