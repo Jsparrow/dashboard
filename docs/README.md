@@ -75,6 +75,7 @@ String medal = switch (finished) {
     case 2 -> "Silver";
     case 3 -> "Bronze";
     default -> "None";
+}
 ```
 
 ### [Use Text Block](https://jsparrow.github.io/rules/use-text-block.html)
@@ -139,7 +140,7 @@ These three new rules bring jSparrow to a total of [***103 automatic refactoring
 Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_4-3-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3-10-0)!
 
 
-***"The art of programming is the art of organizing complexity." ― Edsger Dijkstra***
+***"The art of programming is the art of organizing complexity." ― Edsger W. Dijkstra***
 
 ## jSparrow 4.2.0 Released
 
