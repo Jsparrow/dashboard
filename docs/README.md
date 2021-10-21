@@ -6,6 +6,40 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 4.4.0 and jSparrow Maven Plugin 3.11.0 Released
+
+We are happy to announce the jSparrow October release with one new refactoring rule!
+The new rule makes use of a Stream API extension in Java 16. 
+
+### [Replace Stream Collect by toList](https://jsparrow.github.io/rules/replace-stream-collect-by-to-list.html)
+
+Java 16 introduced [`Stream.toList()`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#toList()) as a shorthand method for converting a Stream into an unmodifiable List.
+This rule replaces invocations of `collect(Collectors.toUnmodifiableList())` by the new method `Stream.toList()`.
+
+For instance, the following code:
+```java
+List<String> List = collection
+		.stream()
+		.map(function)
+		.filter(predicate)
+		.collect(Collectors.toUnmodifiableList());
+```
+is transformed to:
+```java
+List<String> List = collection
+		.stream()
+		.map(function)
+		.filter(predicate)
+		.toList();
+```
+In certain scenarios with immutable context state, `collect(Collectors.toList())` is supported, too.
+
+The new rule brings jSparrow to a total of [***104 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_4-4-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3-11-0)!
+
+
+***"Programming is the art of telling another human being what one wants the computer to do." ― Donald E. Knuth***
 
 ## jSparrow 4.3.0 and jSparrow Maven Plugin 3.10.0 Released
 
@@ -41,6 +75,7 @@ String medal = switch (finished) {
     case 2 -> "Silver";
     case 3 -> "Bronze";
     default -> "None";
+}
 ```
 
 ### [Use Text Block](https://jsparrow.github.io/rules/use-text-block.html)
@@ -105,7 +140,7 @@ These three new rules bring jSparrow to a total of [***103 automatic refactoring
 Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_4-3-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3-10-0)!
 
 
-***"The art of programming is the art of organizing complexity." ― Edsger Dijkstra***
+***"The art of programming is the art of organizing complexity." ― Edsger W. Dijkstra***
 
 ## jSparrow 4.2.0 Released
 
@@ -338,7 +373,7 @@ This new rule brings jSparrow to a total of [***95 automatic refactoring rules**
 Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_3-30-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3-6-0)!
 
 
-***"Everyday life is like programming, I guess. If you love something you can put beauty into it." ― Donald Knuth***
+***"Everyday life is like programming, I guess. If you love something you can put beauty into it." ― Donald E. Knuth***
 
 
 ## jSparrow 3.29.0 and jSparrow Maven Plugin 3.5.0 Released
