@@ -6,6 +6,49 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 4.5.0 and jSparrow Maven Plugin 3.12.0 Released
+
+We are happy to announce the jSparrow November release with one new refactoring rule!
+The new rule is motivated by Java Records.
+
+### [Use Java Records](https://jsparrow.github.io/rules/use-java-records.html)
+
+Since Java 16, record classes are a new kind of class in the Java language. 
+Record classes help to model plain data aggregates with less ceremony than normal classes.
+This rule replaces the declarations of local classes, inner classes, and package private root classes with record class declarations.
+
+For instance, the following inner class:
+```java
+class Point {
+	private final int x;
+	private final int y;
+
+	Point(int x, int y) {
+	this.x = x;
+		this.y = y;
+	}
+
+	public int x() {
+		return x;
+	}
+
+	public int y() {
+		return y;
+	}
+}
+```
+is transformed to:
+```java
+record Point(int x, int y) {}
+```
+
+The new rule brings jSparrow to a total of [***105 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_4-5-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3-12-0)!
+
+
+***"Good code is its own best documentation." ― Steve McConnell***
+
 ## jSparrow 4.4.0 and jSparrow Maven Plugin 3.11.0 Released
 
 We are happy to announce the jSparrow October release with one new refactoring rule!
