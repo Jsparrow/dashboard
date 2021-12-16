@@ -13,7 +13,7 @@ The winter solstice jSparrow release arrives with plenty of new features providi
 ### NEW: jSparrow Pay-Per-Use License Model
 
 After talking to our customers we are announcing the possibility that customers can use jSparrow as they would like to: clear costs and unrestricted use.  
-Your can chose between a 50 or 100 Euro pre paid [voucher](https://jsparrow.io/pricing), and you will get a package of 675 or 1.350 credits for automatical code fixes.  
+You can choose between a 50 or 100 Euro pre-paid [voucher](https://jsparrow.io/pricing), and you will get a package of 675 or 1.350 credits for automatical code fixes.  
 ::: tip How is a credit calculated? 
 For each usage we charge the credits quoted as remediation cost for the selected rule. 
 :::
