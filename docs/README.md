@@ -6,6 +6,80 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 4.6.0 and jSparrow Maven Plugin 3.13.0 Released
+
+The winter solstice jSparrow release arrives with plenty of new features providing a new flexible licensing model, extending the set of jSparrow Markers, and opening a new chapter on jSparrow rules for AssertJ. 
+
+### NEW: jSparrow Pay-Per-Use License Model
+
+After talking to our customers we are announcing the possibility that customers can use jSparrow as they would like to: clear costs and unrestricted use.  
+You can choose between a 50 or 100 Euro pre-paid [voucher](https://jsparrow.io/pricing), and you will get a package of 675 or 1.350 credits for automatical code fixes.  
+::: tip How is a credit calculated? 
+For each usage we charge the credits quoted as remediation cost for the selected rule. 
+:::
+Customers loved the idea of being flexible with our tool. 
+To give you more details please read our [documentation](https://jsparrow.github.io/eclipse/release-notes.html#pay-per-use-license-model) or give us a call.
+
+### jSparrow Markers
+
+Ten additional markers are now available in jSparrow. 
+Furthermore, a new preference page allows uses to activate the preferred jSparrow Markers. 
+![jSparrow Markers Preference Page](/dashboard/img/jsparrow_markers_preference_page_light.png)
+
+### [Chain AssertJ AssertThat Statements](https://jsparrow.github.io/rules/chain-assert-j-assert-that-statements.html)
+
+AssertJ encourages writing fluent test cases by chaining the assertions that target the same object instead of invoking [`assertThat`](https://javadoc.io/doc/org.assertj/assertj-core/latest/org/assertj/core/api/Assertions.html) multiple times.
+This rule replaces consecutive AssertJ assertThat invocations targeting the same object with an assertion chain. 
+Thus, eliminating some redundant code and increasing the readability of test cases.  
+
+__Pre__
+```java
+assertThat(expectedHelloWorld).isNotNull();
+assertThat(expectedHelloWorld).isNotEmpty();
+assertThat(expectedHelloWorld).startsWith("Hello");
+assertThat(expectedHelloWorld).contains(" ");
+assertThat(expectedHelloWorld).contains("World");
+assertThat(expectedHelloWorld).endsWith("!");
+```
+
+__Post__
+```java
+assertThat(expectedHelloWorld)
+	.isNotNull()
+	.isNotEmpty()
+	.startsWith("Hello")
+	.contains(" ")
+	.contains("World")
+	.endsWith("!");
+```
+
+### [Shift AssertJ Description Before Assertion](https://jsparrow.github.io/rules/shift-assert-j-description-before-assertion.html)
+
+AssertJ provides methods for setting descriptions or error messages of assertions, e.g.: [as](https://www.javadoc.io/doc/org.assertj/assertj-core/3.2.0/org/assertj/core/api/Descriptable.html#as-java.lang.String-java.lang.Object...-), [describedAs](https://www.javadoc.io/doc/org.assertj/assertj-core/3.2.0/org/assertj/core/api/Descriptable.html#describedAs-java.lang.String-java.lang.Object...-), [withFailMessage](https://javadoc.io/doc/org.assertj/assertj-core/2.3.0/org/assertj/core/api/AbstractAssert.html#withFailMessage(java.lang.String,%20java.lang.Object...)), and [overridingErrorMessage](https://javadoc.io/doc/org.assertj/assertj-core/2.3.0/org/assertj/core/api/AbstractAssert.html#overridingErrorMessage(java.lang.String,%20java.lang.Object...)).
+These methods should always be invoked before the actual assertion they intend to describe, otherwise, they have no effect. 
+This rule, swaps the invocation of the assertions with the invocation of the descriptions setting for the corresponding assertions.
+
+__Pre__
+```java
+assertThat(user.getName())
+    .isEqualTo("John")
+    .describedAs("Asserting the correct name");
+```
+
+__Post__
+```java
+assertThat(user.getName())
+    .describedAs("Asserting the correct name")
+    .isEqualTo("John");
+```
+---
+
+jSparrow provides now a total of [***107 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_4-6-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3-13-0)!
+
+***"Optimism is an occupational hazard of programming: testing is the treatment." ― Kent Beck***
+
 ## jSparrow 4.5.0 and jSparrow Maven Plugin 3.12.0 Released
 
 We are happy to announce the jSparrow November release with one new refactoring rule!
