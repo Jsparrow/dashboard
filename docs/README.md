@@ -10,12 +10,15 @@ title: jSparrow
 
 The winter solstice jSparrow release arrives with plenty of new features providing a new flexible licensing model, extending the set of jSparrow Markers, and opening a new chapter on jSparrow rules for AssertJ. 
 
-### Pay-Per-Use License Model
+### NEW: jSparrow Pay-Per-Use License Model
 
-For the first time, jSparrow offers the Pay-Per-Use license model. 
-Users get [pre-paid packages](https://jsparrow.io/pricing) of 675 or 1350 credits.
-One **unit of credit** represents an estimation of **one minute remediation cost**. 
-Resolving an issue with a certain rule reduces the available credit with the amount of remediation cost estimated for that rule. 
+After talking to our customers we are announcing the possibility that customers can use jSparrow as they would like to: clear costs and unrestricted use.  
+Your can chose between a 50 or 100 Euro pre paid [voucher](https://jsparrow.io/pricing), and you will get a package of 675 or 1.350 credits for automatical code fixes.  
+::: tip How is a credit calculated? 
+For each usage we charge the credits quoted as remediation cost for the selected rule. 
+:::
+Customers loved the idea of being flexible with our tool. 
+To give you more details please read our [documentation](https://jsparrow.github.io/eclipse/release-notes.html#pay-per-use-license-model) or give us a call.
 
 ### jSparrow Markers
 
