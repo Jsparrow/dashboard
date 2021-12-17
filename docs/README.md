@@ -23,7 +23,7 @@ To give you more details please read our [documentation](https://jsparrow.github
 ### jSparrow Markers
 
 Ten additional markers are now available in jSparrow. 
-Furthermore, a new preference page allows uses to activate the preferred jSparrow Markers. 
+Furthermore, a new preference page allows users to activate the preferred jSparrow Markers. 
 ![jSparrow Markers Preference Page](/dashboard/img/jsparrow_markers_preference_page_light.png)
 
 ### [Chain AssertJ AssertThat Statements](https://jsparrow.github.io/rules/chain-assert-j-assert-that-statements.html)
