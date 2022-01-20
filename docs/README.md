@@ -6,6 +6,50 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 4.7.0 and jSparrow Maven Plugin 3.14.0 Released
+
+We are happy to announce that jSparrow January release introduces a new rule and adds 21 jSparrow markers for existing rules. 
+
+### [Use Dedicated AssertJ Assertions](https://jsparrow.github.io/rules/use-dedicated-assert-j-assertions.html)
+
+AssertJ contains a rich API for writing specific assertions about different types of objects. 
+This rule encourages developers to make use of the dedicated assertions provided by AssertJ. 
+Thus, simplifying the test code and improving the assertion failure messages. 
+
+__Pre__
+```java
+assertThat(expectedString.equals("value")).isTrue();
+assertThat(expectedList.contains("value")).isTrue();
+assertThat(expectedMap.containsKey("key")).isTrue();
+assertThat(expectedFile.isFile()).isTrue();
+assertThat(expectedPath.isAbsolute()).isTrue();
+```
+
+__Post__
+```java
+assertThat(expectedString).isEqualTo("value");
+assertThat(expectedList).contains("value");
+assertThat(expectedMap).containsKey("key");
+assertThat(expectedFile).isFile();
+assertThat(expectedPath).isAbsolute();
+```
+
+### jSparrow Markers
+
+Twenty-one new markers are added to jSparrow. 
+Thus, brining the total number of jSparrow markers to 41. 
+The preference page is redesigned to group markers by their tags:
+
+![jSparrow Markers Preference Page](/dashboard/img/jsparrow_markers_preference_page_redesign_light.png)
+
+---
+
+jSparrow provides now a total of [***108 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_4-7-0) and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3-14-0)!
+
+***"A clever person solves a problem. A wise person avoids it." ― Albert Einstein***
+
 ## jSparrow 4.6.0 and jSparrow Maven Plugin 3.13.0 Released
 
 The winter solstice jSparrow release arrives with plenty of new features providing a new flexible licensing model, extending the set of jSparrow Markers, and opening a new chapter on jSparrow rules for AssertJ. 
