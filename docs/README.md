@@ -6,6 +6,65 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 4.8.0 Released
+
+We are happy to announce that jSparrow February release introduces a new rule and adds 15 jSparrow markers for existing rules. 
+
+### [Remove Unused Fields](https://jsparrow.github.io/rules/remove-unused-fields.html)
+
+This rule finds and removes field declarations that are never used.
+A dedicated configuration wizard allows users to choose the kind of fields they want to analyze and remove.
+
+![jSparrow Remove Unused Code Wizard](/dashboard/img/remove_unused_code_wizard.png)
+
+If users choose to remove public fields, the following class:
+```java
+public class UnusedFieldSample {
+	
+	public String publicUsedField = "";
+	public String publicUnusedReassignedField = "";
+	private String privateUsedField = "";
+	
+	void foo() {
+		publicUnusedReassignedField = "";
+		BlackHole blackHole = new BlackHole();
+		blackHole.use(publicUsedField);
+		blackHole.use(privateUsedField);
+	}
+}
+```
+
+is transformed to: 
+
+```java
+public class UnusedFieldsSample {
+	
+	public String publicUsedField = "";
+	private String privateUsedField = "";
+	
+	void foo() {
+		BlackHole blackHole = new BlackHole();
+		blackHole.use(publicUsedField);
+		blackHole.use(privateUsedField);
+	}
+}
+```
+
+### jSparrow Markers
+
+Fifteen new markers for existing rules to jSparrow. 
+Thus, brining the total number of jSparrow markers to 56.
+
+![jSparrow Markers](/dashboard/img/jSparrowMarker.gif)
+
+---
+
+jSparrow provides now a total of [***109 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_4-8-0)!
+
+***"Low-level programming is good for the programmer’s soul." ― John Carmack***
+
 ## jSparrow 4.7.0 and jSparrow Maven Plugin 3.14.0 Released
 
 We are happy to announce that jSparrow January release introduces a new rule and adds 21 jSparrow markers for existing rules. 
