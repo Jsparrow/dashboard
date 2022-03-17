@@ -6,6 +6,89 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+
+## jSparrow 4.9.0 Released
+
+We are happy to announce that jSparrow March release introduces two new rules for removing unused code and adds 10 jSparrow markers for existing rules. 
+
+### [Remove Unused Methods](https://jsparrow.github.io/rules/remove-unused-methods.html)
+
+This rule finds and removes method declarations that are never used.
+A dedicated configuration wizard allows users to choose the kind of methods they want to remove and how to handle the related test cases. 
+
+![jSparrow Remove Unused Code Wizard](/dashboard/img/remove_unused_code_wizard_002.png)
+
+If users choose to remove private methods, the following class:
+```java
+public class UnusedMethodsSample {
+
+	private void unusedPrivateMethod() {}
+
+	private void run() {
+		System.out.println("Running...");
+	}
+
+	public static void main() {
+		UnusedMethodsSample instance = new UnusedMethodsSample();
+		instance.run();
+	}
+}
+```
+
+is transformed to: 
+
+```java
+public class UnusedMethodsSample {
+
+	private void run() {
+		System.out.println("Running...");
+	}
+
+	public static void main() {
+		UnusedMethodsSample instance = new UnusedMethodsSample();
+		instance.run();
+	}
+}
+```
+
+### [Remove Unused Local Variables](https://jsparrow.github.io/rules/remove-unused-local-variables.html)
+
+This rule finds declarations of local variables that are never used and removes them. 
+Reassignments as well as increment and decrement operations are not counted as active usages. 
+Any annotation except for `@Deprecated` and `@SuppressWarnings` prevents the local variable from being considered as unused. 
+
+As an example, the following code:
+```java
+String usedLocalVariable = "";
+String unusedLocalVariable = "";
+
+BlackHole blackHole = new BlackHole();
+blackHole.use(usedLocalVariable);
+```
+
+is refactored to:
+```java
+String usedLocalVariable = "";
+
+BlackHole blackHole = new BlackHole();
+blackHole.use(usedLocalVariable);
+```
+
+### jSparrow Markers
+
+Ten new markers for existing rules are added to jSparrow. 
+Thus, brining the total number of jSparrow markers to 66.
+
+![jSparrow Markers](/dashboard/img/jSparrowMarker.gif)
+
+---
+
+jSparrow provides now a total of [***111 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_4-9-0)  and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3-16-0)!
+
+***"Deleted code is debugged code." ― Jeff Sickel***
+
 ## jSparrow 4.8.0 Released
 
 We are happy to announce that jSparrow February release introduces a new rule and adds 15 jSparrow markers for existing rules. 
@@ -52,7 +135,7 @@ public class UnusedFieldsSample {
 
 ### jSparrow Markers
 
-Fifteen new markers for existing rules to jSparrow. 
+Fifteen new markers for existing rules are added to jSparrow. 
 Thus, brining the total number of jSparrow markers to 56.
 
 ![jSparrow Markers](/dashboard/img/jSparrowMarker.gif)
