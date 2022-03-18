@@ -7,7 +7,7 @@ title: jSparrow
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
 
-## jSparrow 4.9.0 Released
+## jSparrow 4.9.0 and jSparrow Maven Plugin 3.16.0 Released
 
 We are happy to announce that jSparrow March release introduces two new rules for removing unused code and adds 10 jSparrow markers for existing rules. 
 
