@@ -54,24 +54,24 @@ public class Application {
 ### jSparrow Context Menu
 
 The jSparrow context menu is extended with new entires: 
-* '*Refactor with Default Profile*' - starts jSparrow in the selected sources with the rules defined in the default profile. 
+* *Refactor with Default Profile* - starts jSparrow in the selected sources with the rules defined in the default profile. 
 In this way, the select rules wizard is skipped and the preview wizard will open immediately after the refactoring computation is completed. 
-* '*Edit profiles...*' - opens the jSparrow preference page for editing profiles and selecting the default profile. 
+* *Edit profiles...* - opens the jSparrow preference page for editing profiles and selecting the default profile. 
 
-![jSparrow Context Menu](/img/jsparrow_context_menu_002.png)
+![jSparrow Context Menu](/dashboard/img/jsparrow_context_menu_dark_002.png)
 
 ### jSparrow Markers Preference Page
 
 The jSparrow Markers preference page is extended with a search field that allows users to find jSparrow markers by their name and category:
 
-![jSparrow Markers Preference Page](/img/jsparrow_markers_preference_page_search_field_dark.png)
+![jSparrow Markers Preference Page](/dashboard/img/jsparrow_markers_preference_page_dark_003.png)
 
 ### jSparrow Markers Deactivate Quick-Fix
 
 All jSparrow markers are extended with a quick-fix that allows users to deactivate markers. 
 This quick-fix automatically opens the preference page and searches for the corresponding marker by its name:
 
-![jSparrow Markers Deactivate Quick-Fix](/img/jsparrow_markers_deactivate_quickfix_003.gif)
+![jSparrow Markers Deactivate Quick-Fix](/dashboard/img/jsparrow_markers_deactivate_quickfix_dark_003.gif)
 
 ### New jSparrow Markers
 
