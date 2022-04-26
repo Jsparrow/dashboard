@@ -6,6 +6,85 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 4.10.0 Released
+
+We are happy to announce that jSparrow April release introduces one new rule for removing unused code and adds 10 jSparrow markers for existing rules.
+Additionally, this release includes several UI changes to boost the usability of jSparrow refactoring workflow. 
+
+### [Remove Unused Types](https://jsparrow.github.io/rules/remove-unused-types.html)
+
+This rule finds and removes type declarations that are never used.
+A dedicated configuration wizard allows users to choose the kind of type declarations they want to remove and how to handle the related test cases. 
+
+![jSparrow Remove Unused Code Wizard](/dashboard/img/remove_unused_code_wizard_003.png)
+
+For example, if users choose to remove unused private types, the following code:
+```java
+public class Application {
+
+	private void run() {
+		System.out.println("Running...");
+	}
+
+	public static void main() {
+		UnusedMethodsSample instance = new UnusedMethodsSample();
+		instance.run();
+	}
+
+	private class UnusedType {}
+}
+```
+
+is transformed to: 
+
+```java
+public class Application {
+
+	private void run() {
+		System.out.println("Running...");
+	}
+
+	public static void main() {
+		UnusedMethodsSample instance = new UnusedMethodsSample();
+		instance.run();
+	}
+}
+```
+
+### jSparrow Context Menu
+
+The jSparrow context menu is extended with new entires: 
+* '*Refactor with Default Profile*' - starts jSparrow in the selected sources with the rules defined in the default profile. 
+In this way, the select rules wizard is skipped and the preview wizard will open immediately after the refactoring computation is completed. 
+* '*Edit profiles...*' - opens the jSparrow preference page for editing profiles and selecting the default profile. 
+
+![jSparrow Context Menu](/img/jsparrow_context_menu_002.png)
+
+### jSparrow Markers Preference Page
+
+The jSparrow Markers preference page is extended with a search field that allows users to find jSparrow markers by their name and category:
+
+![jSparrow Markers Preference Page](/img/jsparrow_markers_preference_page_search_field_dark.png)
+
+### jSparrow Markers Deactivate Quick-Fix
+
+All jSparrow markers are extended with a quick-fix that allows users to deactivate markers. 
+This quick-fix automatically opens the preference page and searches for the corresponding marker by its name:
+
+![jSparrow Markers Deactivate Quick-Fix](/img/jsparrow_markers_deactivate_quickfix_003.gif)
+
+### New jSparrow Markers
+
+Ten new markers for existing rules are added to jSparrow. 
+Thus, brining the total number of jSparrow markers to 76.
+
+---
+
+jSparrow provides now a total of [***112 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_4-10-0!).
+
+***"Perfection is achieved not when there is nothing more to add, but rather when there is nothing more to take away." ― Antoine do Saint-Exupery***
 
 ## jSparrow 4.9.0 and jSparrow Maven Plugin 3.16.0 Released
 
