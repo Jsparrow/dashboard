@@ -6,6 +6,44 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 4.11.0 and jSparrow Maven Plugin 3.18.0 Released
+
+We are happy to announce that jSparrow May release introduces one new rule and adds 13 jSparrow markers for existing rules. 
+
+### [Remove Redundant Close](https://jsparrow.github.io/rules/remove-redundant-close.html)
+
+This rule is used to remove redundant `close()` invocations on resources which are declared in the header of try-with-resource statements.
+For example, the following code: 
+```java
+try (BufferedReader br = Files.newBufferedReader(Paths.get(path))) {
+	System.out.println("First line: " + br.readLine());
+	br.close();
+}
+```
+
+is transformed to: 
+
+```java
+try (BufferedReader br = Files.newBufferedReader(Paths.get(path))) {
+	System.out.println("First line: " + br.readLine());;
+}
+```
+
+### jSparrow Markers
+
+Thirteen new markers for existing rules are added to jSparrow. 
+Thus, bringing the total number of jSparrow markers to 89.
+
+![jSparrow Markers](/dashboard/img/use-text-block-marker-001.gif)
+
+---
+
+jSparrow provides now a total of [***113 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_4-11-0)  and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3-18-0)!
+
+***"No code is faster than no code." ― Merb Motto***
+
 ## jSparrow 4.10.0 Released
 
 We are happy to announce that jSparrow April release introduces one new rule for removing unused code and adds 10 jSparrow markers for existing rules.
@@ -76,7 +114,7 @@ This quick-fix automatically opens the preference page and searches for the corr
 ### New jSparrow Markers
 
 Ten new markers for existing rules are added to jSparrow. 
-Thus, brining the total number of jSparrow markers to 76.
+Thus, bringing the total number of jSparrow markers to 76.
 
 ---
 
@@ -156,7 +194,7 @@ blackHole.use(usedLocalVariable);
 ### jSparrow Markers
 
 Ten new markers for existing rules are added to jSparrow. 
-Thus, brining the total number of jSparrow markers to 66.
+Thus, bringing the total number of jSparrow markers to 66.
 
 ![jSparrow Markers](/dashboard/img/jSparrowMarker.gif)
 
@@ -215,7 +253,7 @@ public class UnusedFieldsSample {
 ### jSparrow Markers
 
 Fifteen new markers for existing rules are added to jSparrow. 
-Thus, brining the total number of jSparrow markers to 56.
+Thus, bringing the total number of jSparrow markers to 56.
 
 ![jSparrow Markers](/dashboard/img/jSparrowMarker.gif)
 
@@ -258,7 +296,7 @@ assertThat(expectedPath).isAbsolute();
 ### jSparrow Markers
 
 Twenty-one new markers are added to jSparrow. 
-Thus, brining the total number of jSparrow markers to 41. 
+Thus, bringing the total number of jSparrow markers to 41. 
 The preference page is redesigned to group markers by their tags:
 
 ![jSparrow Markers Preference Page](/dashboard/img/jsparrow_markers_preference_page_redesign_light.png)
