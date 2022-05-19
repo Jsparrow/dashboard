@@ -34,6 +34,7 @@ try (BufferedReader br = Files.newBufferedReader(Paths.get(path))) {
 Thirteen new markers for existing rules are added to jSparrow. 
 Thus, bringing the total number of jSparrow markers to 89.
 
+Here is an example of a jSparrow Marker that transforms a multi-line string literal concatenation into a text block: 
 ![jSparrow Markers](/dashboard/img/use-text-block-marker-001.gif)
 
 ---
