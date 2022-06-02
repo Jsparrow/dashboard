@@ -25,7 +25,7 @@ is transformed to:
 
 ```java
 try (BufferedReader br = Files.newBufferedReader(Paths.get(path))) {
-	System.out.println("First line: " + br.readLine());;
+	System.out.println("First line: " + br.readLine());
 }
 ```
 
