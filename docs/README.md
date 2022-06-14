@@ -512,7 +512,7 @@ String html = "" +
 		"\t\t<meta charset=\"utf-8\">" +
 		"\t</head>\n" +
 		"\t<body class=\"default-view\" style=\"word-wrap: break-word;\">\n"+ 
-		"\t\t<p>Hello, world</p>\n" + 
+		"\t\t<p>Hello world!</p>\n" + 
 		"\t</body>\n"+
 		"</html>\n";
 ```
@@ -525,7 +525,7 @@ String html = """
 				<meta charset="utf-8">
 			</head>
 			<body class="default-view" style="word-wrap: break-word;">
-				<p>Hello, world</p>
+				<p>Hello world!</p>
 			</body>
 		</html>
 		""";
