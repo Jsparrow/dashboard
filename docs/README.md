@@ -10,7 +10,7 @@ title: jSparrow
 
 We are happy to announce that jSparrow midsummer release introduces one new rule. 
 
-### [Replace Request Mapping Annotation](https://jsparrow.github.io/rules/eplace-request-mapping-annotation.html)
+### [Replace Request Mapping Annotation](https://jsparrow.github.io/rules/replace-request-mapping-annotation.html)
 
 This new rule embraces the dedicated Spring Web annotations introduced in Spring Framework 4.3 for writing web controllers. 
 For example, the following code: 
