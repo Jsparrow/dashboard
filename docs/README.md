@@ -6,6 +6,37 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 4.12.0 and jSparrow Maven Plugin 3.19.0 Released
+
+We are happy to announce that jSparrow midsummer release introduces one new rule. 
+
+### [Replace Request Mapping Annotation](https://jsparrow.github.io/rules/eplace-request-mapping-annotation.html)
+
+This new rule embraces the dedicated Spring Web annotations introduced in Spring Framework 4.3 for writing web controllers. 
+For example, the following code: 
+```java
+@RequestMapping(value = "/users/get/{userId}", method = RequestMethod.GET)
+public User getUser(@PathVariable String userId) {
+	// ...
+}
+```
+
+is transformed to: 
+
+```java
+@GetMapping(value = "/users/get/{userId}")
+public User getUser(@PathVariable String userId) {
+	// ...
+}
+```
+---
+
+jSparrow provides now a total of [***114 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_4-12-0)  and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3-19-0)!
+
+***"Intelligence is the ability to avoid doing work, yet getting the work done." ― Linus Torvalds***
+
 ## jSparrow 4.11.0 and jSparrow Maven Plugin 3.18.0 Released
 
 We are happy to announce that jSparrow May release introduces one new rule and adds 13 jSparrow markers for existing rules. 
