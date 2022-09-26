@@ -6,6 +6,99 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 4.13.0 and jSparrow Maven Plugin 3.20.0 Released
+
+We are happy to announce that jSparrow September release introduces three new rules. 
+
+### [Replace Set.removeAll With ForEach](https://jsparrow.github.io/rules/replace-set-remove-all-with-for-each.html)
+
+This new rule replaces invocations of the method [java.util.Set#removeAll(java.util.Collection)](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html#removeAll(java.util.Collection)) because a call this method may lead to performance problems due to a possible O(n^2) complexity.
+For example, the following code: 
+```java
+	void removeStringsFromSet(Set<String> stringSet, List<String> stringList) {
+		stringSet.removeAll(stringList);
+	}
+```
+
+is transformed to: 
+
+```java
+	void removeStringsFromSet(Set<String> stringSet, List<String> stringList) {
+		stringList.forEach(stringSet::remove);
+	}
+```
+
+### [Replace Wrong Class for Logger](https://jsparrow.github.io/rules/replace-wrong-class-for-logger.html)
+
+If a given logger is initialized with a class that is different from the class where it is declared, then this new rule will replace the wrong initialization argument with the correct one.
+For example, the following code: 
+```java
+//...
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+//...
+public class Employee extends User {
+	static final Logger LOGGER = LoggerFactory.getLogger(User.class);
+	// ...
+}
+```
+
+is transformed to: 
+
+```java
+//...
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+//...
+public class Employee extends User {
+	static final Logger LOGGER = LoggerFactory.getLogger(Employee.class);
+	// ...
+}
+```
+
+### [Replace Multi Branch If By Switch](https://jsparrow.github.io/rules/replace-multi-branch-if-by-switch.html)
+
+This new rule embraces replaces invocations of the method 
+For example, the following code: 
+```java
+	String getTitle(int weekDay) {
+		if (weekDay == 1 || weekDay == 3 || weekDay == 5) {
+			return "Timetable For Monday, Wednesday, Friday";
+		} else if (weekDay == 2 || weekDay == 4 || weekDay == 6) {
+			return "Timetable For Tuesday, Thursday, Saturday";
+		} else {
+			return "Timetable For Sunday Or Holiday";
+		}
+	}
+```
+
+is transformed to: 
+
+```java
+	String getTitle(int weekDay) {
+		return switch (weekDay) {
+		case 1, 3, 5 -> "Timetable For Monday, Wednesday, Friday";
+		case 2, 4, 6 -> "Timetable For Tuesday, Thursday, Saturday";
+		default -> "Timetable For Sunday Or Holiday";
+		};
+	}
+```
+---
+
+jSparrow provides now a total of [***117 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_4-13-0)  and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3-20-0)!
+
+### jSparrow Markers
+
+Two new markers have been added to jSparrow. 
+Thus, bringing the total number of jSparrow markers to 92.
+
+***"Nothing will come of nothing." ― William Shakespeare***
+
+
 ## jSparrow 4.12.0 and jSparrow Maven Plugin 3.19.0 Released
 
 We are happy to announce that jSparrow midsummer release introduces one new rule. 
@@ -34,6 +127,11 @@ public User getUser(@PathVariable String userId) {
 jSparrow provides now a total of [***114 automatic refactoring rules***](https://jsparrow.github.io/rules/).
 
 Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_4-12-0)  and [jSparrow Maven](https://jsparrow.github.io/maven/release-notes.html#_3-19-0)!
+
+### jSparrow Markers
+
+One new marker has been added to jSparrow. 
+Thus, bringing the total number of jSparrow markers to 90.
 
 ***"Intelligence is the ability to avoid doing work, yet getting the work done." ― Linus Torvalds***
 
