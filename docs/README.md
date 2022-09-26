@@ -96,10 +96,6 @@ Find out more information in the Release Notes for [jSparrow Eclipse](https://js
 Two new markers have been added to jSparrow. 
 Thus, bringing the total number of jSparrow markers to 92.
 
-Here is an example of a jSparrow Marker that replaces a multi branch if statement: 
-![jSparrow Markers]()
-
-
 ***"Nothing will come of nothing." ― William Shakespeare***
 
 
@@ -136,9 +132,6 @@ Find out more information in the Release Notes for [jSparrow Eclipse](https://js
 
 One new marker has been added to jSparrow. 
 Thus, bringing the total number of jSparrow markers to 90.
-
-Here is an example of a jSparrow Marker that replaces a RequestMapping annotation: 
-![jSparrow Markers]()
 
 ***"Intelligence is the ability to avoid doing work, yet getting the work done." ― Linus Torvalds***
 
