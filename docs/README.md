@@ -12,7 +12,7 @@ We are happy to announce that jSparrow September release introduces three new ru
 
 ### [Replace Set.removeAll With ForEach](https://jsparrow.github.io/rules/replace-set-remove-all-with-for-each.html)
 
-This new rule replaces invocations of the method [java.util.Set#removeAll(java.util.Collection)](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html#removeAll(java.util.Collection)) because a call this method may lead to performance problems due to a possible O(n^2) complexity.
+This new rule replaces invocations of the method [java.util.Set#removeAll(java.util.Collection)](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html#removeAll(java.util.Collection)) which may cause performance problems due to a possible O(n^2) complexity.
 For example, the following code: 
 ```java
 	void removeStringsFromSet(Set<String> stringSet, List<String> stringList) {
@@ -60,7 +60,7 @@ public class Employee extends User {
 
 ### [Replace Multi Branch If By Switch](https://jsparrow.github.io/rules/replace-multi-branch-if-by-switch.html)
 
-This new rule embraces replaces invocations of the method 
+This rule replaces multi-branch if statements by corresponding switch expressions or switch statements with switch labeled rules which have been introduced in Java 14.
 For example, the following code: 
 ```java
 	String getTitle(int weekDay) {
