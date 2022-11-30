@@ -6,6 +6,13 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 4.14.0
+
+We are happy to announce that our new release offers an improved user experience of our jSparrow Eclipse Plugin. We have changed the appearance of the UI for the rule selection and the licensing process.
+
+***“Technology like art is a soaring exercise of the human imagination.” – Daniel Bell***
+
+
 ## jSparrow 4.13.0 and jSparrow Maven Plugin 3.20.0 Released
 
 We are happy to announce that jSparrow September release introduces three new rules. 
