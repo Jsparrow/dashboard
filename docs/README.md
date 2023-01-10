@@ -6,6 +6,13 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 4.14.1
+
+We are happy to announce that our new release fixes the issues for the usage of jSparrow on eclipse 2022-12.
+
+***“We wish You a happy New Year 2023 and happy coding!”***
+
+
 ## jSparrow 4.14.0
 
 We are happy to announce that our new release offers an improved user experience of our jSparrow Eclipse Plugin. We have changed the appearance of the UI for the rule selection and the licensing process.
