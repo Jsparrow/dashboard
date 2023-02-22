@@ -6,6 +6,13 @@ title: jSparrow
 
 ![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
 
+## jSparrow 4.15.0
+
+We are happy to announce that in our new release we have once again improved the user experience of our jSparrow Eclipse Plugin. There is a better handling of the UI in connection with the refactoring process.
+
+***“Technology is nothing. What’s important is that you have a faith in people, that they’re basically good and smart, and if you give them tools, they’ll do wonderful things with them.” – Steve Jobs***
+
+
 ## jSparrow 4.14.1
 
 We are happy to announce that our new release fixes the issues for the usage of jSparrow on eclipse 2022-12.
