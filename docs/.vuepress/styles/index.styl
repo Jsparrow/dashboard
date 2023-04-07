@@ -56,9 +56,12 @@ h2~p {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
-    max-width: calc(50% - 35px);
+    max-width: calc(50% - 4px - 35px);
     padding-left: 35px;
     padding-top: 2.4rem
+
+    display: inline-block;
+    vertical-align: top;
 }
 
 #release-notes h2 {
@@ -76,13 +79,16 @@ h2~p {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
-    max-width: 50%;
+    max-width: calc(50% - 4px);
     margin-top: 1.5rem
+
+    display: inline-block;
+    vertical-align: top;
 }
 
 #news-section section {
     position: relative;
-    max-width: calc(100% - 40px);
+    max-width: calc(100% - 4px - 40px);
     padding: 3rem 20px;
     -webkit-box-shadow: 0 0 1px 1px rgba(237, 237, 237, .7490196078);
     box-shadow: 0 0 1px 1px rgba(237, 237, 237, .7490196078);
@@ -93,7 +99,7 @@ h2~p {
 #news-section section:after {
     content: "";
     display: block;
-    width: calc(100% - 40px);
+    width: calc(100% - 4px - 40px);
     border-bottom: 1px solid #f3f3f3;
     position: absolute;
     bottom: 10px;
@@ -131,7 +137,7 @@ h2~p {
     margin: auto;
     display: block;
     text-align: center;
-    max-width: calc(100% - 100px)
+    max-width: calc(100% - 4px - 100px)
 }
 
 #news-section .link-border-bottom {
