@@ -2021,23 +2021,23 @@ Thanks a lot to our dedicated team who have done a great job! Everyone is fully 
  			– Audrey Hepburn
 			<br><br>
 		</p>
-		<a href="https://jsparrow.io/?ref=eclipse-ide" class="link">Go to jsparrow.io</a>
+		<a href="https://jsparrow.io/?ref=eclipse-ide" target="_blank" rel="noopener noreferrer" class="link">Go to jsparrow.io</a>
 	</section>
 	<section>
 		<h2 class="center-text">System-wide Refactoring</h2>
 		<p class="center-text">Set sail toward a bug-free future by upgrading to our premium version:</p>
-		<a href="https://jsparrow.io/pricing/" class="button">Upgrade to Premium</a>
+		<a href="https://jsparrow.io/pricing/" target="_blank" rel="noopener noreferrer" class="button">Upgrade to Premium</a>
 		<p>Subscribe to our newsletter to receive 10% off your order!</p>
-		<a href="https://app.getresponse.com/site2/17f3cd2b918898fc3cb956513b853ab4/?u=M8diV&webforms_id=SH435" class="link link-border-bottom">Subscription Form</a>
+		<a href="https://app.getresponse.com/site2/17f3cd2b918898fc3cb956513b853ab4/?u=M8diV&webforms_id=SH435" rel="noopener noreferrer" class="link link-border-bottom">Subscription Form</a>
 		<img src="/dashboard/img/icon-youtube.png" alt="youtube icon" class="youtube-icon">
 		<h2 class="center-text">Jsparrow is active on Youtube!</h2>
 		<p class="center-text">Follow our channel, where we regularly solve everyday programming problems and improve together.</p>
-		<a href="https://www.youtube.com/@captain_jsparrow" class="button">Follow our channel</a>
+		<a href="https://www.youtube.com/@captain_jsparrow"  target="_blank" rel="noopener noreferrer" class="button">Follow our channel</a>
 	</section>
 	<section>
 		<h2>Documentation</h2>
 		<p>
-			If you have any technical questions, please do not hesitate to read through <a href="https://jsparrow.github.io/">documentation</a> or contact us at webform@jsparrow.io.
+			If you have any technical questions, please do not hesitate to read through <a href="https://jsparrow.github.io/" target="_blank" rel="noopener noreferrer">documentation</a> or contact us at webform@jsparrow.io.
 		</p>
 		<p>
 			If you have any further questions or wish to give feedback, feel free to send us a message anytime.
