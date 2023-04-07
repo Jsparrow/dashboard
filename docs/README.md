@@ -4,7 +4,12 @@ footer: © jSparrow a brand of Splendit IT-Consulting GmbH 2020
 title: jSparrow
 ---
 
-![jSparrow Linebreak Very-Top](/dashboard/img/git-linebreak-very-top.png)
+
+<section id="release-notes">
+
+![jSparrow Very-Top](/dashboard/img/captain-jsparrow.png)
+
+# Latest Release
 
 ## jSparrow 4.16.0
 
@@ -1978,6 +1983,67 @@ Thanks a lot to our dedicated team who have done a great job! Everyone is fully 
 ...
 *Jun 22, 2017*
 
-![jSparrow Linebreak Bottom](/dashboard/img/git-linebreak-bottom.png)
+![jSparrow Very-Top](/dashboard/img/captain-jsparrow.png)
+
+</section>
+
+<aside id="news-section">
+	<h1 class="sr-only">jSparrow Marketing Area</h1>
+	<section>
+		<h3 class="sr-only">jSparrow Newsletter</h3>
+		<img src="/dashboard/img/jsparrow-logo.png" alt="blue jsparrow logo" id="logo">
+		<p>28.03.2023</p>
+		<h2>New jSparrow Eclipse Release</h2>
+		<p>
+			Arrrr mate,
+		</p>
+		<p>
+			For this easter, we wanted to give back to the hard-working Java developers, no matter if they are in-house or freelancing. So we decided to review the UX again. We found out that there is a wish to remove the registration form completely. 
+		</p>
+		<p>
+			And that is why, in this release of jSparrow Eclipse 4.16.0, we have completely removed the trial registration form! Now you can right away access the 20 starter rules by simply installing jSparrow through the Eclipse Marketplace.
+		</p>
+		<p>
+			Additionally, our markers and their refactorings can be applied to your sources LIVE, while coding and without a license! 
+		</p>
+		<p>
+			<br>
+			<i>Stay tuned for the next release!</i>
+			<br>
+			Your Captain jSparrow
+		</p>
+		<img src="/dashboard/img/newsletter-march-23.png" alt="image of a ship on sea with a pirate bird">
+		<p>
+			<br>
+			<i>
+			"To plant a garden is to believe in tomorrow."</i>
+			<br>
+ 			– Audrey Hepburn
+			<br><br>
+		</p>
+		<a href="https://jsparrow.io/?ref=eclipse-ide" class="link">Go to jsparrow.io</a>
+	</section>
+	<section>
+		<h2 class="center-text">System-wide Refactoring</h2>
+		<p class="center-text">Set sail toward a bug-free future by upgrading to our premium version:</p>
+		<a href="https://jsparrow.io/pricing/" class="button">Upgrade to Premium</a>
+		<p>Subscribe to our newsletter to receive 10% off your order!</p>
+		<a href="https://app.getresponse.com/site2/17f3cd2b918898fc3cb956513b853ab4/?u=M8diV&webforms_id=SH435" class="link link-border-bottom">Subscription Form</a>
+		<img src="/dashboard/img/icon-youtube.png" alt="youtube icon" class="youtube-icon">
+		<h2 class="center-text">Jsparrow is active on Youtube!</h2>
+		<p class="center-text">Follow our channel, where we regularly solve everyday programming problems and improve together.</p>
+		<a href="https://www.youtube.com/@captain_jsparrow" class="button">Follow our channel</a>
+	</section>
+	<section>
+		<h2>Documentation</h2>
+		<p>
+			If you have any technical questions, please do not hesitate to read through <a href="https://jsparrow.github.io/">documentation</a> or contact us at webform@jsparrow.io.
+		</p>
+		<p>
+			If you have any further questions or wish to give feedback, feel free to send us a message anytime.
+		</p>
+	</section>
+</aside>
+
 
 <Footer />
