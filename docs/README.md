@@ -13,7 +13,7 @@ title: jSparrow
 
 ## jSparrow 4.17.0
 
-We are happy to announce that in our new release we have introduced a new dialog where the user can select in a comfortable way all the Java  sources which he wants to refactor with the help of jSparrow rules.
+We are happy to announce that in our new release we have introduced a new dialog with a comfortable user interface to select Java sources for a subsequent refactoring by our rules.
 
 ***“You should never be so busy that you don't have time to think.” – Georg Christoph Lichtenberg (german mathematician)***
 
