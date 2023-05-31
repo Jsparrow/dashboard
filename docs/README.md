@@ -11,6 +11,13 @@ title: jSparrow
 
 # Latest Release
 
+## jSparrow 4.17.0
+
+We are happy to announce that in our new release we have introduced a new dialog with a comfortable user interface to select Java sources for a subsequent refactoring by our rules.
+
+***“You should never be so busy that you don't have time to think.” – Georg Christoph Lichtenberg (german mathematician)***
+
+
 ## jSparrow 4.16.0
 
 We are happy to announce that in our new release we have introduced the availability of our 20 free rules without registration. Additionally, our markers can also be applied on your sources for free.
