@@ -11,6 +11,41 @@ title: jSparrow
 
 # Latest Release
 
+## jSparrow 4.18.0
+
+We are happy to announce that in our new release we introduce one new rule. 
+
+### [Use Ternary Operator](https://jsparrow.github.io/rules/use-ternary-operator.html)
+
+This new rule transforms simple if-statements to equivalent constructs which use the ternary operator.
+For example, the following code: 
+```java
+	int x;
+	if (condition) {
+		x = 1;
+	} else {
+		x = 0;
+	}
+```
+
+is transformed to: 
+
+```java
+	int x = condition ? 1 : 0;
+```
+### jSparrow Markers
+
+Two new markers have been added to jSparrow. 
+Thus, bringing the total number of jSparrow markers to 94.
+
+
+jSparrow provides now a total of [***118 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_4-18-0)
+
+***“Everting should be made as simple as possible, but not simpler.” – Albert Einstein***
+
+
 ## jSparrow 4.17.0
 
 We are happy to announce that in our new release we have introduced a new dialog with a comfortable user interface to select Java sources for a subsequent refactoring by our rules.
