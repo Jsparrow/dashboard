@@ -13,7 +13,7 @@ title: jSparrow
 
 ## jSparrow 4.18.0
 
-We are happy to announce that in our new release we introduce one new rule. 
+We are happy to announce that in our new release we have introduced one new rule and 2 new markers. 
 
 ### [Use Ternary Operator](https://jsparrow.github.io/rules/use-ternary-operator.html)
 
@@ -43,7 +43,7 @@ jSparrow provides now a total of [***118 automatic refactoring rules***](https:/
 
 Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_4-18-0)
 
-***“Everting should be made as simple as possible, but not simpler.” – Albert Einstein***
+***“Everything should be made as simple as possible, but not simpler.” – Albert Einstein***
 
 
 ## jSparrow 4.17.0
