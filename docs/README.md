@@ -2034,36 +2034,34 @@ Thanks a lot to our dedicated team who have done a great job! Everyone is fully 
 	<section>
 		<h3 class="sr-only">jSparrow Newsletter</h3>
 		<img src="/dashboard/img/jsparrow-logo.png" alt="blue jsparrow logo" id="logo">
-		<p>28.03.2023</p>
-		<h2>New jSparrow Eclipse Release</h2>
-		<p>
-			Arrrr mate,
-		</p>
-		<p>
-			For this easter, we wanted to give back to the hard-working Java developers, no matter if they are in-house or freelancing. So we decided to review the UX again. We found out that there is a wish to remove the registration form completely. 
-		</p>
-		<p>
-			And that is why, in this release of jSparrow Eclipse 4.16.0, we have completely removed the trial registration form! Now you can right away access the 20 starter rules by simply installing jSparrow through the Eclipse Marketplace.
-		</p>
-		<p>
-			Additionally, our markers and their refactorings can be applied to your sources LIVE, while coding and without a license! 
-		</p>
+		<p>Last Updated: July 2023</p>
+		<h2><br>We need your help</h2>
+		<p>If you have a minute to spare, would you consider leaving us a review? </p>
+		<a href="https://www.trustpilot.com/evaluate/jsparrow.io" rel="noopener noreferrer">
+			<img src="/dashboard/img/trustpilot-star.png" alt="trustpilot star">
+			<img src="/dashboard/img/trustpilot-star.png" alt="trustpilot star">
+			<img src="/dashboard/img/trustpilot-star.png" alt="trustpilot star">
+			<img src="/dashboard/img/trustpilot-star.png" alt="trustpilot star">
+			<img src="/dashboard/img/trustpilot-star.png" alt="trustpilot star">
+		</a>
 		<p>
 			<br>
-			<i>Stay tuned for the next release!</i>
+			Reviews help us provide better features, rules, and quick fixes and help more Java developers find jSparrow as a solution to tedious refactoring
 			<br>
-			Your Captain jSparrow
+		</p>
+		<p>
+			<br><br>
+			<i>Thank you in advance!</i>
+			<br>
+			Your jSparrow Team
+			<br>
 		</p>
 		<img src="/dashboard/img/newsletter-march-23.png" alt="image of a ship on sea with a pirate bird">
 		<p>
 			<br>
-			<i>
-			"To plant a garden is to believe in tomorrow."</i>
-			<br>
- 			– Audrey Hepburn
-			<br><br>
+			<i>Thank you for installing jSparrow for Java refactoring!</i>
 		</p>
-		<a href="https://jsparrow.io/?ref=eclipse-ide" target="_blank" rel="noopener noreferrer" class="link">Go to jsparrow.io</a>
+		<p></p>
 	</section>
 	<section>
 		<h2 class="center-text">System-wide Refactoring</h2>
