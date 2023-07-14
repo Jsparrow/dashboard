@@ -2035,8 +2035,8 @@ Thanks a lot to our dedicated team who have done a great job! Everyone is fully 
 		<h3 class="sr-only">jSparrow Newsletter</h3>
 		<img src="/dashboard/img/jsparrow-logo.png" alt="blue jsparrow logo" id="logo">
 		<p>Last Updated: July 2023</p>
-		<h2><br>We need your help</h2>
-		<p>If you have a minute to spare, would you consider leaving us a review? </p>
+		<h2 style="text-transform: capitalize;"><br>We appreciate you!</h2>
+		<p>We regularly clean code in-house and jSparrow is our way of helping developers like you do it faster and better. Seeing that clean-code developer use jSparrow is very motivating. If you like jSparrow, can you leave us a plugin review? It should only take one mintue. </p>
 		<a href="https://www.trustpilot.com/evaluate/jsparrow.io" rel="noopener noreferrer">
 			<img src="/dashboard/img/trustpilot-star.PNG" alt="trustpilot star">
 			<img src="/dashboard/img/trustpilot-star.PNG" alt="trustpilot star">
@@ -2046,21 +2046,19 @@ Thanks a lot to our dedicated team who have done a great job! Everyone is fully 
 		</a>
 		<p>
 			<br>
-			Reviews help us provide better features, rules, and quick fixes and help more Java developers find jSparrow as a solution to tedious refactoring
+			Reviews help and motivates us provide better features, rules, and quick fixes!
 			<br>
 		</p>
 		<p>
-			<br><br>
-			<i>Thank you in advance!</i>
 			<br>
-			Your jSparrow Team
+			<i>It would be much appreciated!</i>
+			<br>
+			<i>And thanks in advance!</i>
+			<br>
+			Your jSparrow Developers
 			<br>
 		</p>
 		<img src="/dashboard/img/newsletter-march-23.png" alt="image of a ship on sea with a pirate bird">
-		<p>
-			<br>
-			<i>Thank you for installing jSparrow for Java refactoring!</i>
-		</p>
 		<p></p>
 	</section>
 	<section>
