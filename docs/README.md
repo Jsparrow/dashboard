@@ -2037,7 +2037,7 @@ Thanks a lot to our dedicated team who have done a great job! Everyone is fully 
 		<p>Last Updated: July 2023</p>
 		<h2 style="text-transform: capitalize;"><br>We appreciate you!</h2>
 		<p>We regularly clean code in-house and jSparrow is our way of helping developers like you do it faster and better. Seeing that clean-code developer use jSparrow is very motivating. If you like jSparrow, can you leave us a plugin review? It should only take one mintue. </p>
-		<a href="https://www.trustpilot.com/evaluate/jsparrow.io" rel="noopener noreferrer">
+		<a href="https://www.trustpilot.com/evaluate/jsparrow.io" rel="noopener">
 			<img src="/dashboard/img/trustpilot-star.PNG" alt="trustpilot star">
 			<img src="/dashboard/img/trustpilot-star.PNG" alt="trustpilot star">
 			<img src="/dashboard/img/trustpilot-star.PNG" alt="trustpilot star">
