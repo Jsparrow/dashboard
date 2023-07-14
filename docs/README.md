@@ -2038,11 +2038,11 @@ Thanks a lot to our dedicated team who have done a great job! Everyone is fully 
 		<h2><br>We need your help</h2>
 		<p>If you have a minute to spare, would you consider leaving us a review? </p>
 		<a href="https://www.trustpilot.com/evaluate/jsparrow.io" rel="noopener noreferrer">
-			<img src="/dashboard/img/trustpilot-star.png" alt="trustpilot star">
-			<img src="/dashboard/img/trustpilot-star.png" alt="trustpilot star">
-			<img src="/dashboard/img/trustpilot-star.png" alt="trustpilot star">
-			<img src="/dashboard/img/trustpilot-star.png" alt="trustpilot star">
-			<img src="/dashboard/img/trustpilot-star.png" alt="trustpilot star">
+			<img src="/dashboard/img/trustpilot-star.PNG" alt="trustpilot star">
+			<img src="/dashboard/img/trustpilot-star.PNG" alt="trustpilot star">
+			<img src="/dashboard/img/trustpilot-star.PNG" alt="trustpilot star">
+			<img src="/dashboard/img/trustpilot-star.PNG" alt="trustpilot star">
+			<img src="/dashboard/img/trustpilot-star.PNG" alt="trustpilot star">
 		</a>
 		<p>
 			<br>
