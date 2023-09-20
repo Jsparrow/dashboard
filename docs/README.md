@@ -11,6 +11,38 @@ title: jSparrow
 
 # Latest Release
 
+## jSparrow 4.19.0
+
+We are happy to announce that in our new release we have introduced one new rule and one new marker.
+
+### [Inline Local Variables](https://jsparrow.github.io/rules/inline-local-variables.html)
+
+This new rule in-lines local variables which are decleared  and then immediately returned or thrown.
+For example, the following code: 
+```java
+	int result = (a + b) * (c + d);
+	return result;
+```
+
+is transformed to: 
+
+```java
+	return (a + b) * (c + d);
+```
+### jSparrow Markers
+
+One new marker has been added to jSparrow. 
+Thus, bringing the total number of jSparrow markers to 95.
+
+
+jSparrow provides now a total of [***119 automatic refactoring rules***](https://jsparrow.github.io/rules/).
+
+Find out more information in the Release Notes for [jSparrow Eclipse](https://jsparrow.github.io/eclipse/release-notes.html#_4-19-0)
+
+***“Ein Element des Erfolges, egal in welchem Beruf, ist die Lust am Handwerk.” – Irène Joliot Curie (physicist and chemist)***
+
+
+
 ## jSparrow 4.18.0
 
 We are happy to announce that in our new release we have introduced one new rule and 2 new markers. 
