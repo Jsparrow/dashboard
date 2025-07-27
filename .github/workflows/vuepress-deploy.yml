@@ -25,14 +25,11 @@ jobs:
           node-version: 20
           cache: 'yarn'
 
-      - name: Build Docs
-        run: NODE_OPTIONS=--openssl-legacy-provider yarn docs:build
-
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
       - name: Build Docs
-        run: yarn build 
+        run: NODE_OPTIONS=--openssl-legacy-provider yarn build 
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
